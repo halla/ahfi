@@ -19,3 +19,9 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+$('document').ready(function() {
+  $('input').filter(':visible:first').focus();
+  Mousetrap.bind('left', function() { if ($('.prev-post').length) window.location = $('.prev-post').attr('href'); });
+  Mousetrap.bind('right', function() { if ($('.next-post').length) window.location = $('.next-post').attr('href'); });
+});
