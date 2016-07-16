@@ -1,6 +1,6 @@
 defmodule Ahfi.PostView do
   use Ahfi.Web, :view
-
+  use Timex
 
   def year(post) do
     post.date_published.year
@@ -29,10 +29,11 @@ defmodule Ahfi.PostView do
     (to_string conn.scheme) <> "://" <> conn.host <> "/blog/" <> yearmonth <> post.slug <> "/"
   end
 
-  def rss_date(datetime) do
-    to_string(datetime)
-    #  Timex.format(datetime, "{RFC822}")
-
+  def rss_date(date) do
+    datetime = Timex.to_datetime({date.year, date.month, date.day})
+    #to_string(datetime)
+    {:ok, result} = Timex.format(datetime, "{RFC822}")
+    result
   end
 
 end

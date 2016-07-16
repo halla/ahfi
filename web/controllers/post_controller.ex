@@ -85,4 +85,9 @@ defmodule Ahfi.PostController do
     |> put_flash(:info, "Post deleted successfully.")
     |> redirect(to: post_path(conn, :index))
   end
+
+  def rss(conn, _params) do
+    posts = Repo.all(from p in Post, limit: 10, order_by: [desc: p.date_published] )
+    render(conn, "rss.xml", posts: posts)
+  end
 end
