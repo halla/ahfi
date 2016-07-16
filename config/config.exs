@@ -12,7 +12,7 @@ config :ahfi,
 # Configures the endpoint
 config :ahfi, Ahfi.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "vtyw22x2eyNZlrey1RFtv57xP6bTW0Cn8Def9vKx82qsgsIL7nfAqxlNrQ2ruGJl",
+  secret_key_base: "tMi1Ych3ztQujXTQ/Z8dPnB1WZQDzAtH8WvcxqiIzazFCe7qnUnTc8BBwZWb9d6O",
   render_errors: [view: Ahfi.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Ahfi.PubSub,
            adapter: Phoenix.PubSub.PG2]

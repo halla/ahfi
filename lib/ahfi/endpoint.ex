@@ -36,7 +36,7 @@ defmodule Ahfi.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_ahfi_key",
-    signing_salt: "13v/OMJZ"
+    signing_salt: "Lpg7E2KS"
 
   plug Ahfi.Router
 end

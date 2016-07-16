@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0">
+      <channel>
+        <title>anttihalla.fi</title>
+        <link>http://anttihalla.fi</link>
+        <description>Exploring Web &amp; Data</description>
+      </channel>
+
+      <%= for post <- @posts do %>
+      <item>
+            <title><%= post.title %></title>
+            <link><%= absolute_url(@conn, post) %></link>
+            <guid><%= absolute_url(@conn, post) %></guid>
+            <pubDate><%= rss_date(post.date_published) %></pubDate>
+            <description><![CDATA[<%= (Earmark.to_html post.body) %>]]></description>
+      </item>
+      <% end %>
+
+</rss>

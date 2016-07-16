@@ -1,36 +1,45 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}", name: "Phoenix!" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-</div>
+<div id="content" class="front-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="intro">
 
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
+          <p>The web is my platform.</p> <p>
+         I've been experimenting with a range of technologies to create software for the web. Besides helping me think and learn &mdash; and paying my bills &mdash; it enabled me to say goodbye to the cubicle and explore the world.
+</p></div>
 
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
+        <div class="cognitools block">
+        <h2>Cognitools</h2>
+        <em>Tools for computer assisted thinking and learning. </em>
+
+            <ul class="list-unstyled">
+                <li><%= link "Socrateaser", to: static_path(@conn, "/apps/socrateaser/index.html") %>
+                    &mdash; Guided generic problem solving
+                </li>
+                <li><%= link "Numbervision", to: "https://play.google.com/store/apps/details?id=com.anywheris.numbervision" %>
+                    &mdash; Trainer for visual acuity and working memory
+                </li>
+            </ul>
+        </div>
+
+        <h2>Articles </h2>
+        <em>(Only in Finnish for now)</em>
+        <ul class="list-unstyled blog-list-simple">
+
+        <%= for post <- @posts do %>
+            <li><%= link post.title, to: post_path(@conn, :view, post.date_published.year, Ahfi.PostView.month(post), post.slug) <> "/" %></li>
+        <% end %>
+        </ul>
+
+      </div>
+      <div class="col-md-4 other-sites">
+        <h2>My sites</h2>
+        <ul class="list-unstyled">
+          <li><img src="<%= static_path(@conn, "/images/center_black1_fb.jpg") %>" /><h3>Mind on Maps</h3><a href="http://mindonmaps.com"></a><em>Expand your memory, index your mind, organize your life. </em>Blog about computer assisted thinking (with mind maps).</li>
+          <li><img src="<%= static_path(@conn, "/images/antti-mirje-innsbruck-340x200.jpg") %>" /><h3>Anywhereism</h3><em>A journey as digital nomads. </em>Me and my wife have been living out of our backpacks for over 1000 days now.<a href="http://www.anywhereism.net"></a></li>
+          <li><img src="<%= static_path(@conn, "/images/anywheris_logo.png") %>" /><h3>Anywheris</h3><a href="http://www.anywheris.com"></a>Our company. I'm available for short-term, part-time, remote contract work. </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

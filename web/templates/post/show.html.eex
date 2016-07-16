@@ -1,28 +1,27 @@
-<h2>Show post</h2>
 
-<ul>
+<div class="container article">
+    
+  <div class="row">
+    <div class="col-md-9">
+      <h1><%= @post.title %></h1>
 
-  <li>
-    <strong>Body:</strong>
-    <%= @post.body %>
-  </li>
+      <%= (Earmark.to_html @post.body) |> raw %>
 
-  <li>
-    <strong>Slug:</strong>
-    <%= @post.slug %>
-  </li>
+      <div class="related-posts">
+          <%= if @prevPost do %>
+          <%= link ("← " <> @prevPost.title), class: "prev-post", to: post_path(@conn, :view, year(@prevPost), month(@prevPost), @prevPost.slug) <> "/" %>
+          <% end %>
+          <%= if @nextPost do %>
 
-  <li>
-    <strong>Date published:</strong>
-    <%= @post.date_published %>
-  </li>
-
-  <li>
-    <strong>Title:</strong>
-    <%= @post.title %>
-  </li>
-
-</ul>
-
-<%= link "Edit", to: post_path(@conn, :edit, @post) %>
-<%= link "Back", to: post_path(@conn, :index) %>
+          <%= link (@nextPost.title <> " →"), class: "next-post", to: post_path(@conn, :view, year(@nextPost), month(@nextPost), @nextPost.slug) <> "/" %>
+          <% end %>
+      </div>
+      <div id="comments">
+        <%= render "disqus.html", post: @post, conn: @conn %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="date_published"><%= format_date @post.date_published %></div>
+    </div>
+  </diV>
+</div>

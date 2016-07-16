@@ -26,10 +26,33 @@ defmodule Ahfi.PostController do
     end
   end
 
+  def view(conn, %{"slug" => slug}) do
+      post = Repo.get_by!(Post, slug: slug)
+      show(conn, %{ "id" => post.id})
+  end
+
   def show(conn, %{"id" => id}) do
     post = Repo.get!(Post, id)
-    render(conn, "show.html", post: post)
+    query = from p in Post,
+        where: p.date_published > ^post.date_published,
+        order_by: p.date_published,
+        limit: 1
+    nextPost = Repo.one(query)
+    query2 = from p in Post,
+        where: p.date_published < ^post.date_published,
+        order_by: [desc: p.date_published],
+        limit: 1
+    prevPost = Repo.one(query2)
+    render(conn,
+        "show.html",
+
+        post: post,
+        metaTitle: post.title,
+        metaDescription: String.slice(post.body, 0, 150),
+        nextPost: nextPost,
+        prevPost: prevPost)
   end
+
 
   def edit(conn, %{"id" => id}) do
     post = Repo.get!(Post, id)

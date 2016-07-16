@@ -41,3 +41,9 @@ config :ahfi, Ahfi.Repo,
   database: "ahfi_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :ahfi, :gtm, id: "dev"
+
+config :ahfi, :disqus,
+  site_url_base: "http://dev.anttihalla.fi",
+  shortname: "anttihalladev"

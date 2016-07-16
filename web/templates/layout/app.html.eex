@@ -1,35 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>Hello Ahfi!</title>
-    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
-  </head>
+        <meta name="author" content="Antti Halla">
 
-  <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300italic,300,400,500" media="all"/>
+
+        <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>"/>
+
+        <%= if @conn.assigns[:metaTitle] do %>
+            <title><%= @metaTitle %> | Antti Halla</title>
+        <%= else %>
+            <title>Antti Halla</title>
+        <%= end %>
+
+        <%= if @conn.assigns[:metaDescription] do %>
+            <meta name="description" content="<%= @metaDescription %>">
+        <%= else %>
+            <meta name="description" content="Refactoring code and thoughts. Adapting to environments. Meta-hopping with mind maps.">
+        <%= end %>
+
+
+    </head>
+    <body>
+    <!-- Google Tag Manager -->
+       <noscript><iframe src="//www.googletagmanager.com/ns.html?id=<%= gtmcode %>"
+       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+       '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+       })(window,document,'script','dataLayer','<%= gtmcode %>');</script>
+       <!-- End Google Tag Manager -->
+
+
+     <header id="header" class="header">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-10">
+                     <h2><a href="/" class="site-title">Antti Halla —  Web &amp; Data</a></h2>
+                 </div>
+                 <div class="col-md-2">
+
+                 </div>
+             </div>
+             </div></header>
+
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
 
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
 
-    </div> <!-- /container -->
+
+    <div id="footer">
+  <div class="container">
+    <ul class="list-inline">
+      <li>
+        <a href="/">Home</a>
+      </li>
+
+      <li>
+        <a href="http://www.anywheris.com/">Company</a>
+      </li>
+      <li>
+        <a class="follow twitter" href="http://twitter.com/AnttiHalla">Twitter</a>
+      </li>
+      <li>
+        <a class="follow linkedin" href="http://fi.linkedin.com/pub/antti-halla/0/283/129">LinkedIn</a>
+      </li>
+      <li>
+        <a class="follow rss" href="/blog/feeds/rss/">Rss</a>
+      </li>
+      <li>
+        <a href="http://mindonmaps.com">Mind maps</a>
+      </li>
+      <li>
+        <a href="http://www.anywhereism.net">Nomad life</a>
+      </li>
+      <li>
+        <a href="http://about.me/antti.halla">About</a>
+      </li>
+    </ul>
+    Antti Halla 2016
+  </div>
+</div>
+
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
