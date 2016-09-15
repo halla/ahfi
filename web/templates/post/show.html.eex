@@ -1,10 +1,12 @@
 
 <div class="container article">
-    
+
   <div class="row">
     <div class="col-md-9">
       <h1><%= @post.title %></h1>
-
+      <%= if @current_user do %>
+        <%= link "Edit", to: post_path(@conn, :edit, @post.id) %>
+      <%= end %>
       <%= (Earmark.to_html @post.body) |> raw %>
 
       <div class="related-posts">

@@ -1,12 +1,21 @@
 defmodule Ahfi.PostController do
   use Ahfi.Web, :controller
 
-  plug :authenticate_user when not (action in [:show, :view, :rss])
+  plug :authenticate_user when not (action in [:show, :view, :rss, :index])
 
   alias Ahfi.Post
 
+  def myVisiblePosts(conn) do
+    user = conn.assigns.current_user
+    if user do
+      Post
+    else
+      from p in Post, where: p.is_published == true
+    end
+  end
+
   def index(conn, _params) do
-    posts = Repo.all(Post)
+    posts = Repo.all(myVisiblePosts(conn))
     render(conn, "index.html", posts: posts)
   end
 
