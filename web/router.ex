@@ -7,6 +7,7 @@ defmodule Ahfi.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug Ahfi.Auth
   end
 
   pipeline :api do
@@ -21,6 +22,7 @@ defmodule Ahfi.Router do
     get "/blog/:year/:month/:slug/", PostController, :view
 
     resources "/posts", PostController
+    resources "/sessions", SessionController, only: [:new, :create, :delete]
   end
 
   # Other scopes may use custom stacks.

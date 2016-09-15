@@ -44,7 +44,9 @@
                      <h2><a href="/" class="site-title">Antti Halla —  Web &amp; Data</a></h2>
                  </div>
                  <div class="col-md-2">
-
+                   <%= if @current_user do %>
+                    <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>
+                   <%= end %>
                  </div>
              </div>
              </div></header>

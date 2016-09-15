@@ -19,7 +19,7 @@ defmodule Ahfi.Mixfile do
   def application do
     [mod: {Ahfi, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :timex]]
+                    :phoenix_ecto, :postgrex, :timex, :comeonin]]
   end
 
   # Specifies which paths to compile per environment.
@@ -39,7 +39,8 @@ defmodule Ahfi.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      { :earmark, "~> 1.0" },
-     {:timex, "~> 3.0"}]
+     {:timex, "~> 3.0"},
+     {:comeonin, "~> 2.5"}]
 
   end
 

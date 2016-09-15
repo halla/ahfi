@@ -36,6 +36,7 @@ defmodule Ahfi.Web do
 
       import Ahfi.Router.Helpers
       import Ahfi.Gettext
+      import Ahfi.Auth, only: [ authenticate_user: 2 ]
     end
   end
 

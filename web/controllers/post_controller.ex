@@ -1,6 +1,8 @@
 defmodule Ahfi.PostController do
   use Ahfi.Web, :controller
 
+  plug :authenticate_user when not (action in [:show, :view, :rss])
+
   alias Ahfi.Post
 
   def index(conn, _params) do
