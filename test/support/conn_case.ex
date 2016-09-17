@@ -26,6 +26,7 @@ defmodule Ahfi.ConnCase do
       import Ecto.Query
 
       import Ahfi.Router.Helpers
+      import Ahfi.TestHelpers
 
       # The default endpoint for testing
       @endpoint Ahfi.Endpoint

@@ -9,8 +9,14 @@ defmodule Ahfi.Auth do
   end
 
   def call(conn, _opts) do
-    user_id = get_session(conn, :user_id)
-    assign(conn, :current_user, user_id != nil)
+    cond do
+      user = conn.assigns[:current_user]
+        -> conn
+      user_id = get_session(conn, :user_id)
+        -> assign(conn, :current_user, user_id != nil)
+      true
+        -> assign(conn, :current_user, nil)
+    end
   end
 
   def authenticate_user(conn, opts) do
