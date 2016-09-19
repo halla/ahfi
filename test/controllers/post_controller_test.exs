@@ -89,4 +89,34 @@ defmodule Ahfi.PostControllerTest do
     assert redirected_to(conn) == post_path(conn, :index)
     refute Repo.get(Post, post.id)
   end
+
+  @tag login_as: "somebody"
+  test "unpublished shown if logged in", %{conn: conn} do
+    attrs = Dict.merge(@valid_attrs, %{is_published: false})
+    post = insert_post(attrs)
+    conn = get conn, post_path(conn, :show, post)
+    assert html_response(conn, 200) =~ post.title
+  end
+
+  test "unpublished not shown if not logged in", %{conn: conn} do
+    attrs = Dict.merge(@valid_attrs, %{is_published: false})
+    post = insert_post(attrs)
+    conn = get conn, post_path(conn, :show, post)
+    assert html_response(conn, 404)
+  end
+
+  test "unpublished not listed in rss if not logged in", %{conn: conn} do
+    attrs = Dict.merge(@valid_attrs, %{is_published: true})
+    post = insert_post(attrs)
+    conn = get conn, post_path(conn, :rss)
+    assert length(conn.assigns.posts) == 0
+  end
+
+  test "published listed in rss if not logged in", %{conn: conn} do
+    attrs = Dict.merge(@valid_attrs, %{is_published: true})
+    post = insert_post(attrs)
+    conn = get conn, post_path(conn, :rss)
+    assert length(conn.assigns.posts) == 1
+  end
+
 end
