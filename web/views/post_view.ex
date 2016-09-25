@@ -20,13 +20,13 @@ defmodule Ahfi.PostView do
   end
 
   def disqus_shortname do
-    Application.get_env(:ahfi_ex, :disqus)[:shortname]
+    Application.get_env(:ahfi, :disqus)[:shortname]
   end
 
   def absolute_url(conn, post) do
     yearmonth = "#{year(post)}/#{month(post)}/"
 
-    (to_string conn.scheme) <> "://" <> conn.host <> "/blog/" <> yearmonth <> post.slug <> "/"
+    site_url_base <> "/blog/" <> yearmonth <> post.slug <> "/"
   end
 
   def rss_date(date) do
@@ -34,6 +34,10 @@ defmodule Ahfi.PostView do
     #to_string(datetime)
     {:ok, result} = Timex.format(datetime, "{RFC822}")
     result
+  end
+
+  def site_url_base() do
+    Application.get_env(:ahfi, :site_url_base)
   end
 
 end

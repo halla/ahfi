@@ -45,7 +45,7 @@ config :ahfi, Ahfi.Repo,
 config :ahfi, :gtm, id: "dev"
 
 config :ahfi, :disqus,
-  site_url_base: "http://dev.anttihalla.fi",
   shortname: "anttihalladev"
 
+config :ahfi, :site_url_base, "http://dev.anttihalla.fi"
 import_config "dev.secret.exs"
