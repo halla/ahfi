@@ -4,3 +4,22 @@ body { margin-top: 0; }
 .front-page .cognitools { margin-bottom: 2em}
 .front-page .cognitools ul { margin: 0.5em 0}
 .front-page .cognitools a { text-transform: uppercase; letter-spacing: 0.04em;}
+
+textarea.form-control { font-size: 20px; padding: 10px 100px; }
+textarea { min-height: 500px; }
+
+img + em { font-size: 0.9em;
+margin-bottom: 1em;
+display: block;
+text-indent: 0;
+line-height: 1.4;
+padding: 0 22px;
+}
+
+.ingress {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    line-height: 1.4;
+}

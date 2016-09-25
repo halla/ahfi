@@ -36,7 +36,7 @@
         <h2>My sites</h2>
         <ul class="list-unstyled">
           <li><img src="<%= static_path(@conn, "/images/center_black1_fb.jpg") %>" /><h3>Mind on Maps</h3><a href="http://mindonmaps.com"></a><em>Expand your memory, index your mind, organize your life. </em>Blog about computer assisted thinking (with mind maps).</li>
-          <li><img src="<%= static_path(@conn, "/images/antti-mirje-innsbruck-340x200.jpg") %>" /><h3>Anywhereism</h3><em>A journey as digital nomads. </em>Me and my wife have been living out of our backpacks for over 1000 days now.<a href="http://www.anywhereism.net"></a></li>
+          <li><img src="<%= static_path(@conn, "/images/antti-mirje-innsbruck-340x200.jpg") %>" /><h3>Anywhereism</h3><em>A journey as digital nomads. </em>Me and my wife have been living out of our backpacks since January 2013.<a href="http://www.anywhereism.net"></a></li>
           <li><img src="<%= static_path(@conn, "/images/anywheris_logo.png") %>" /><h3>Anywheris</h3><a href="http://www.anywheris.com"></a>Our company. I'm available for short-term, part-time, remote contract work. </li>
         </ul>
       </div>
