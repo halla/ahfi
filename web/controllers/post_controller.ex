@@ -46,12 +46,12 @@ defmodule Ahfi.PostController do
     post = Repo.get(myVisiblePosts(conn), id)
     if post do
 
-      query = from p in Post,
+      query = from p in myVisiblePosts(conn),
           where: p.date_published > ^post.date_published,
           order_by: p.date_published,
           limit: 1
       nextPost = Repo.one(query)
-      query2 = from p in Post,
+      query2 = from p in myVisiblePosts(conn),
           where: p.date_published < ^post.date_published,
           order_by: [desc: p.date_published],
           limit: 1
