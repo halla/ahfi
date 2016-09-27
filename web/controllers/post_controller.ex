@@ -80,7 +80,8 @@ defmodule Ahfi.PostController do
     render(conn, "edit.html", post: post, changeset: changeset)
   end
 
-  def update(conn, %{"id" => id, "post" => post_params}) do
+
+  def update(conn, %{"id" => id, "post" => post_params} = params) do
     post = Repo.get!(Post, id)
     changeset = Post.changeset(post, post_params)
 
@@ -88,11 +89,13 @@ defmodule Ahfi.PostController do
       {:ok, post} ->
         conn
         |> put_flash(:info, "Post updated successfully.")
-        |> redirect(to: post_path(conn, :show, post))
+        |> redirect(to: post_path(conn, :edit, post))
       {:error, changeset} ->
         render(conn, "edit.html", post: post, changeset: changeset)
     end
   end
+
+
 
   def delete(conn, %{"id" => id}) do
     post = Repo.get!(Post, id)
