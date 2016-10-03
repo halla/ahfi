@@ -1,0 +1,58 @@
+<div class="container projects">
+  <ul class="list-unstyled projects other-sites">
+    <li class="row">
+      <div class="col-md-4">
+        <img src="<%= static_path(@conn, "/images/center_black1_fb.jpg") %>" />
+      </div>
+      <div class="col-md-8">
+        <h2>Mind on Maps</h2>
+        <a href="http://mindonmaps.com"></a><em class="tagline">Expand your memory, index your mind, organize your life. </em>
+        <p>I've been using <em>mind maps</em> as my daily go-to cognitive tool for over 10 years now.
+          I'm writing a book about computer assisted thinking (with mind maps).
+      </div>
+    </li>
+    <li class="row">
+      <div class="col-md-4">
+        <img src="<%= static_path(@conn, "/images/antti-mirje-innsbruck-340x200.jpg") %>" />
+      </div>
+      <div class="col-md-8">
+        <h2>Anywhereism</h2>
+        <em class="tagline">A journey as digital nomads. </em>
+        Me and my wife have been working 99% online and living out of our backpacks since January 2013. We occasionally write updates about our travels.
+        <a href="http://www.anywhereism.net"></a>
+      </div>
+    </li>
+
+    <li class="row">
+      <div class="col-md-4">
+        <img src="<%= static_path(@conn, "/images/anywheris_logo.png") %>" />
+      </div>
+      <div class="col-md-8">
+        <h2>Anywheris</h2>
+        <a href="http://www.anywheris.com"></a>Our company. I'm available for short-term, part-time, remote contract work.
+      </div>
+    </li>
+  </ul>
+
+  <div class="cognitools block">
+  <h2>Cognitools</h2>
+  <em>Tools and prototypes for computer assisted thinking and learning. </em>
+
+      <ul class="list-unstyled">
+          <li><%= link "Socrateaser", to: static_path(@conn, "/apps/socrateaser/index.html") %>
+              &mdash; Guided generic problem solving
+          </li>
+          <li><%= link "Synapticle", to: static_path(@conn, "/apps/synapticle/index.html") %>
+              &mdash; Tickle your brain with information, reinforce your memory, collide ideas.
+          </li>
+          <li><%= link "Numbervision", to: "https://play.google.com/store/apps/details?id=com.anywheris.numbervision" %>
+              &mdash; Trainer for visual acuity and working memory
+          </li>
+
+      </ul>
+  </div>
+
+  More bits and pieces of code at my <%= link "GitHub", to: "https://github.com/halla" %> account.
+
+
+</div>

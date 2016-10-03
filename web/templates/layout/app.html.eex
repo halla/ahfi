@@ -7,8 +7,9 @@
 
         <meta name="author" content="Antti Halla">
 
-        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300italic,300,400,500" media="all"/>
 
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i" rel="stylesheet">
+        <link rel="stylesheet" href="<%= static_path(@conn, "/vendor/fa/css/font-awesome.min.css") %>"/>
         <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>"/>
 
         <%= if @conn.assigns[:metaTitle] do %>
@@ -40,13 +41,21 @@
      <header id="header" class="header">
          <div class="container">
              <div class="row">
-                 <div class="col-md-10">
-                     <h2><a href="/" class="site-title">Antti Halla —  Web &amp; Data</a></h2>
+                 <div class="col-md-6">
+                     <h2><a href="/" class="site-title">Antti Halla</a></h2>
                  </div>
-                 <div class="col-md-2">
-                   <%= if @current_user do %>
-                    <%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %>
-                   <%= end %>
+                 <div class="col-md-6">
+                   <nav role="navigation">
+                    <ul class="nav nav-pills pull-right">
+                      <li><%= link "Home", to: page_path(@conn, :index) %></li>
+                      <li><%= link "Projects", to: page_path(@conn, :projects) %></li>
+                      <li><%= link "Blog", to: page_path(@conn, :blog) %></li>
+                      <%= if @current_user do %>
+                        <li><%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %></li>
+                      <%= end %>
+
+                    </ul>
+                  </nav>
                  </div>
              </div>
              </div></header>
@@ -93,7 +102,7 @@
     Antti Halla 2016
   </div>
 </div>
-
+    <script>window.userToken="<%= assigns.user_token %>"</script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>

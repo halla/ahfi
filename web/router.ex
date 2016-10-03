@@ -18,6 +18,8 @@ defmodule Ahfi.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/projects/", PageController, :projects
+    get "/blog/", PageController, :blog
     get "/blog/feeds/rss/", PostController, :rss
     get "/blog/:year/:month/:slug/", PostController, :view
 

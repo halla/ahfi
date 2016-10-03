@@ -13,10 +13,17 @@ defmodule Ahfi.Auth do
       user = conn.assigns[:current_user]
         -> conn
       user_id = get_session(conn, :user_id)
-        -> assign(conn, :current_user, user_id != nil)
+        -> put_current_user(conn, user_id)
       true
-        -> assign(conn, :current_user, nil)
+        -> put_current_user(conn, nil)
     end
+  end
+
+  defp put_current_user(conn, user_id) do
+    token = Phoenix.Token.sign(conn, "user socket", user_id)
+    conn
+    |> assign(:current_user, user_id != nil)
+    |> assign(:user_token, token)
   end
 
   def authenticate_user(conn, opts) do

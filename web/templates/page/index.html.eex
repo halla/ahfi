@@ -1,50 +1,33 @@
 <div id="content" class="front-page">
   <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="intro">
-
-          <p>The web is my platform.</p> <p>
-         I've been experimenting with a range of technologies to create software for the web. Besides helping me think and learn &mdash; and paying my bills &mdash; it enabled me to say goodbye to the cubicle and explore the world.
-</p></div>
-
-        <div class="cognitools block">
-        <h2>Cognitools</h2>
-        <em>Tools and prototypes for computer assisted thinking and learning. </em>
-
-            <ul class="list-unstyled">
-                <li><%= link "Socrateaser", to: static_path(@conn, "/apps/socrateaser/index.html") %>
-                    &mdash; Guided generic problem solving
-                </li>
-                <li><%= link "Synapticle", to: static_path(@conn, "/apps/synapticle/index.html") %>
-                    &mdash; Tickle your brain with information, reinforce your memory, collide ideas.
-                </li>
-                <li><%= link "Numbervision", to: "https://play.google.com/store/apps/details?id=com.anywheris.numbervision" %>
-                    &mdash; Trainer for visual acuity and working memory
-                </li>
-
-            </ul>
+      <div class="row">
+        <div class="col-md-3">
+          <img class="profile" src="<%= static_path(@conn, "/images/antti1-square.jpg") %>"> </img>
         </div>
 
-        <h2>Articles </h2>
-        <em>(Only in Finnish for now)</em>
-        <ul class="list-unstyled blog-list-simple">
-
-        <%= for post <- @posts do %>
-            <li><%= link post.title, to: post_path(@conn, :view, post.date_published.year, Ahfi.PostView.month(post), post.slug) <> "/" %></li>
-        <% end %>
-        </ul>
-
-      </div>
-      <div class="col-md-4 other-sites">
-        <h2>Sites</h2>
-        <ul class="list-unstyled">
-          <li><img src="<%= static_path(@conn, "/images/center_black1_fb.jpg") %>" /><h3>Mind on Maps</h3>
-            <a href="http://mindonmaps.com"></a><em>Expand your memory, index your mind, organize your life. </em>My upcoming book about computer assisted thinking (with mind maps).</li>
-          <li><img src="<%= static_path(@conn, "/images/antti-mirje-innsbruck-340x200.jpg") %>" /><h3>Anywhereism</h3><em>A journey as digital nomads. </em>Me and my wife have been living out of our backpacks since January 2013.<a href="http://www.anywhereism.net"></a></li>
-          <li><img src="<%= static_path(@conn, "/images/anywheris_logo.png") %>" /><h3>Anywheris</h3><a href="http://www.anywheris.com"></a>Our company. I'm available for short-term, part-time, remote contract work. </li>
-        </ul>
+        <div class="intro col-md-9">
+          <p>I'm <strong>Antti</strong>, a programmer and a software engineer, methodically exploring and experimenting as I go, while
+          living a nomadic life.</p>
+          <p>The web is my platform.</p> <p>
+         I've been experimenting with a range of technologies to create software for the web. Besides helping me think and learn &mdash; and paying my bills &mdash; it enabled me to explore the world.
+       </p>
+       <p class="social-icons">
+         <a href="http://twitter.com/AnttiHalla"><i class="fa fa-3 fa-twitter" aria-hidden="true"></i></a>
+         <a href="http://fi.linkedin.com/pub/antti-halla/0/283/129"><i class="fa fa-3 fa-linkedin" aria-hidden="true"></i></a>
+         <a href="https://github.com/halla"><i class="fa fa-3 fa-github" aria-hidden="true"></i></a>
+         <!-- <a href="http://twitter.com/AnttiHalla"><i class="fa fa-3 fa-envelope" aria-hidden="true"></i></a> -->
+       </p>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-8">
+  <h2>Projects</h2>
+  <p>Head over to the <%= link "project", to: page_path(@conn, :projects) %> page to find out what I'm up to at the moment. </p>
+  <h2>Blog</h2>
+  <p>In the <%= link "blog", to: page_path(@conn, :blog) %>
+    I time to time write <em>(only in Finnish for now)</em> about what I've learned on the way.  </p>
+  </div>
+</div>
+
   </div>
 </div>

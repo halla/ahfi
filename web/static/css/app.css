@@ -23,3 +23,38 @@ padding: 0 22px;
     margin-left: 2em;
     line-height: 1.4;
 }
+
+#header a.site-title {
+  font-weight: 600;
+  font-size: 1.5em;
+  color: #444;
+}
+
+#header nav ul { margin-top: 0.5em }
+#header nav a {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.nav > li > form > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+
+}
+
+
+.front-page .intro { margin-bottom: 2em; }
+.front-page .intro strong { font-style: normal; }
+.front-page img.profile { margin-top: 1em; }
+.front-page .intro p.social-icons { text-align: center; padding-right: 4em; margin-top: 2em }
+.front-page h2 { margin-top: 1em; }
+.social-icons a { color: #333; margin-right: 15px; font-size: 1.4em;  }
+
+
+ul.projects > li { overflow: hidden; }
+ul.projects > li  img { max-width: 300px; margin-top: 1em; }
+.other-sites .col-md-8 { position: static; }
+
+em.tagline { margin-bottom: 0.2em; font-size: 1.1em; display: block }
