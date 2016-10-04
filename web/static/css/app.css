@@ -36,6 +36,7 @@ padding: 0 22px;
   font-weight: 400;
   letter-spacing: 0.03em;
 }
+#header nav a.active { font-weight: 500; }
 
 .nav > li > form > a {
     position: relative;

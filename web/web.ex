@@ -53,6 +53,7 @@ defmodule Ahfi.Web do
       import Ahfi.Router.Helpers
       import Ahfi.ErrorHelpers
       import Ahfi.Gettext
+      import Ahfi.MyHelpers
     end
   end
 
