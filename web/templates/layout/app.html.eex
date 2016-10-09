@@ -49,6 +49,7 @@
                     <ul class="nav nav-pills pull-right">
                       <li><%= link "Home", to: page_path(@conn, :index), class: active_class(@conn, page_path(@conn, :index)) %></li>
                       <li><%= link "Projects", to: page_path(@conn, :projects), class: active_class(@conn, page_path(@conn, :projects)) %></li>
+                      <li><%= link "Coaching", to: page_path(@conn, :coaching), class: active_class(@conn, page_path(@conn, :coaching)) %></li>
                       <li><%= link "Blog", to: page_path(@conn, :blog), class: active_class(@conn, page_path(@conn, :blog)) %></li>
                       <%= if @current_user do %>
                         <li><%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %></li>

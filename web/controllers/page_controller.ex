@@ -14,4 +14,8 @@ defmodule Ahfi.PageController do
     posts = Repo.all(from p in Ahfi.PostController.myVisiblePosts(conn), order_by: [desc: p.date_published])
     render conn, "blog.html", posts: posts, metaTitle: "Blog"
   end
+
+  def coaching(conn, _params) do
+    render conn, "coaching.html"
+  end
 end
