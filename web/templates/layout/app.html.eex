@@ -100,7 +100,7 @@
         <a href="http://about.me/antti.halla">About</a>
       </li>
     </ul>
-    Antti Halla 2016
+     Created with <a href="http://www.phoenixframework.org/">Phoenix Framework</a> / <a href="http://elixir-lang.org/">Elixir</a> &nbsp;&nbsp;&nbsp;&nbsp;Antti Halla 2016
   </div>
 </div>
     <script>window.userToken="<%= assigns.user_token %>"</script>
