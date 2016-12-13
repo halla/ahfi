@@ -6,9 +6,10 @@
       </div>
       <div class="col-md-8">
         <h2>Mind on Maps</h2>
-        <a href="http://mindonmaps.com"></a><em class="tagline">Expand your memory, index your mind, organize your life. </em>
-        <p>I've been using <em>mind maps</em> as my daily go-to cognitive tool for over 10 years now.
-          I'm writing a book about computer assisted thinking (with mind maps).
+        <a href="http://mindonmaps.com"></a><em class="tagline">Navigate your thoughts with mind maps.</em>
+        <p>I've been using digital <em>mind maps</em> as my daily go-to cognitive tool for over 10 years now. During those
+          years I've moved from a collection of a dozen scattered maps to a connected system spanning hundreds.
+          I'm writing a book about my experience.
       </div>
     </li>
     <li class="row">
@@ -29,7 +30,11 @@
       </div>
       <div class="col-md-8">
         <h2>Anywheris</h2>
-        <a href="http://www.anywheris.com"></a>Our company. I'm available for short-term, part-time, remote contract work.
+        <a href="http://www.anywheris.com"></a>Our company.
+        <p>
+          Do you have a software project that would use the help of an experienced full-stack developer in the team? Ideally
+          in the area of learning and education. I'd like to hear from you. I'm available for fixed-term, part-time, remote contract work.
+        </p>
       </div>
     </li>
   </ul>

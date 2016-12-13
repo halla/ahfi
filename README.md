@@ -18,3 +18,16 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## Publishing
+
+localhost
+* git commit, push
+
+server
+* git pull
+* MIX_ENV=prod mix compile
+* iex -S mix phoenix.server
+* export MIX_ENV="prod"
+* mix compile
+* mix digest
