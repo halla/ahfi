@@ -2,7 +2,7 @@
   <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <img class="profile" src="<%= static_path(@conn, "/images/antti1-square.jpg") %>"> </img>
+          <img class="profile" src="<%= static_path(@conn, "/images/antti-cwc-2017-1000px-sq.jpg") %>"> </img>
         </div>
 
         <div class="intro col-md-9">
