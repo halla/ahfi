@@ -45,7 +45,7 @@
   <em>Tools and prototypes for computer assisted thinking and learning. </em>
 
       <ul class="list-unstyled">
-          <li><%= link "Socrateaser", to: static_path(@conn, "/apps/socrateaser/index.html") %>
+          <li><%= link "Socrateaser", to: static_path(@conn, "/apps/socrateaser") %>
               &mdash; Guided generic problem solving
           </li>
           <li><%= link "Synapticle", to: static_path(@conn, "/apps/synapticle/index.html") %>
