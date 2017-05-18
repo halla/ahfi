@@ -4,7 +4,7 @@ defmodule Ahfi.Mixfile do
   def project do
     [app: :ahfi,
      version: "0.0.1",
-     elixir: "~> 1.2",
+     elixir: "~> 1.4",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix, :gettext] ++ Mix.compilers,
      build_embedded: Mix.env == :prod,
@@ -19,7 +19,7 @@ defmodule Ahfi.Mixfile do
   def application do
     [mod: {Ahfi, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :timex, :comeonin]]
+                    :phoenix_ecto, :postgrex, :timex, :comeonin, :earmark ]]
   end
 
   # Specifies which paths to compile per environment.
@@ -40,7 +40,8 @@ defmodule Ahfi.Mixfile do
      {:cowboy, "~> 1.0"},
      { :earmark, "~> 1.0" },
      {:timex, "~> 3.0"},
-     {:comeonin, "~> 2.5"}]
+     {:comeonin, "~> 2.5"},
+     {:distillery, "~> 1.0"},]
 
   end
 

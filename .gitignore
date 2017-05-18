@@ -24,4 +24,3 @@ erl_crash.dump
 /config/prod.secret.exs
 /config/*secret.exs
 
-mix.lock

@@ -30,4 +30,14 @@ server
 * iex -S mix phoenix.server
 * export MIX_ENV="prod"
 * mix compile
-* mix digest
+* mix phoenix.digest
+
+
+Digestit
+* phoenix.digest tekee vain digestoinnin. kopiointi webistä priviin tapahtuu jossain muualla?
+
+
+## Distillery release and deployment
+
+* ssh ws007.anywheris.com -L 5433:localhost:5432 -N
+* MIX_ENV=prod mix release
