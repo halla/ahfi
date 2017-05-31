@@ -41,3 +41,9 @@ Digestit
 
 * ssh ws007.anywheris.com -L 5433:localhost:5432 -N
 * MIX_ENV=prod mix release
+* ./deploy-prod.sh
+
+On server
+* sudo systemctl restart ahfi
+* check permissions /srv/www/ahfi_prod/var especially
+* chmod g+s directory/  --sticky for default group ownership (www-data)

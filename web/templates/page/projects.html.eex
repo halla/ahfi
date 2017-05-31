@@ -45,14 +45,14 @@
   <em>Tools and prototypes for computer assisted thinking and learning. </em>
 
       <ul class="list-unstyled">
-          <li><%= link "Socrateaser", to: static_path(@conn, "/apps/socrateaser") %>
+          <li><%= link "Socrateaser", to: static_path(@conn, "/socrateaser/") %>
               &mdash; Guided thinking using predefined question sets.
           </li>
           <li>
-            <%= link "Valuesorter", to: static_path(@conn, "/apps/valuesorter-lite/index.html") %>
-            &mdash; (Bubble) Sort out a list of thoughts. Simple guided sorting algorithm to help in prioritazing things.
+            <%= link "Valuesorter", to: static_path(@conn, "/apps/valuesorter-lite/") %>
+            &mdash; (Bubble) Sort out a list of thoughts. Simple guided sorting algorithm to help in prioritizing things.
           </li>
-          <li><%= link "Synapticle", to: static_path(@conn, "/apps/synapticle/index.html") %>
+          <li><%= link "Synapticle", to: static_path(@conn, "/apps/synapticle/") %>
               &mdash; Tickle your brain with information, reinforce your memory, collide ideas.
           </li>
           <li><%= link "Numbervision", to: "https://play.google.com/store/apps/details?id=com.anywheris.numbervision" %>
