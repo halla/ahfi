@@ -1,0 +1,34 @@
+<div class="container consulting">
+  <div class="row">
+    <div class="col-md-8">
+      <h1>Consulting</h1>
+
+      <h2>Software Crafting</h2>
+      <p>The passion of generating new ideas and turning them into working software drives
+        me constantly to learn more. The 10+ years of experience in software development has
+        taught me about a range of technologies.
+      </p>
+      
+        <p> I'm a <em>full-stack</em> developer, meaning I can build a
+          web service from the ground up. I'm happiest when building prototypes, but I also enjoy being part
+        of building continuously improving development processes.</p>
+
+
+  <h2>Mental Coaching</h2>
+  <p>I've used digital <em>mind maps</em> as
+  my personal information tool for 15 years, which has lead me seek better ways to analyze and organize my thoughts.
+  I see computer programming and thinking as similar systemic activities. What you know is your data. What you do is your program.
+  </p>
+
+
+<p>Coaching is about personal development and change. It's about clarifying your thoughts and direction in a methodic way.
+It's about developing the mental skill and flexibility to solve any problem that the life throws at you.
+</p>
+<p>
+<blockquote>If you want to get on overview of my way of thinking, check out my book
+   <em>Mind on maps: Navigate your thoughts methodically with digital mind maps</em> <a href="https://www.amazon.com/dp/B06X9Q3NBB">(Amazon)</a>.
+</blockquote>
+</p>
+  </div>
+</div>
+</div>

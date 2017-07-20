@@ -1,6 +1,8 @@
 /* This file is for your main application css. */
 body { margin-top: 0; }
 
+h2, h3, h4 { margin-top: 2em; }
+
 .front-page .cognitools { margin-bottom: 2em}
 .front-page .cognitools ul { margin: 0.5em 0}
 .front-page .cognitools a { text-transform: uppercase; letter-spacing: 0.04em;}
@@ -55,7 +57,7 @@ padding: 0 22px;
 
 
 ul.projects > li { overflow: hidden; }
-ul.projects > li  img { max-width: 300px; margin-top: 1em; }
+ul.projects > li  img { max-width: 300px; margin-top: 2em; }
 .other-sites .col-md-8 { position: static; }
 
 em.tagline { margin-bottom: 0.2em; font-size: 1.1em; display: block }

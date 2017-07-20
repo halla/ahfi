@@ -28,6 +28,14 @@
     </div>
     <div class="row">
       <div class="col-md-8">
+
+        <h2>Latest</h2>
+        <h3>My book Mind on Maps released</h3>
+        <p>
+          <em>Mind on Maps -- Navigate your thoughts methodically with digital mind maps</em> is available on <a href="https://www.amazon.com/Mind-Maps-Navigate-thoughts-methodically/dp/9526857046"> Amazon</a>.
+          Check out the <%= link "Mind on Maps website", to: "https://mindonmaps.com" %> for more info.
+          <p>
+
   <h2>Projects</h2>
   <p>Head over to the <%= link "project", to: page_path(@conn, :projects) %> page to find out what I'm up to at the moment. </p>
   <h2>Blog</h2>

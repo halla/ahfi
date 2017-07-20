@@ -19,7 +19,19 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
 
+
 ## Publishing
+
+* ./deploy-prod.sh
+* apps are separate things,
+  * socrateaser via nginx conf
+
+### Restart server
+
+* sudo systemctl restart ahfi
+
+
+## Publishing, the old way
 
 localhost
 * git commit, push

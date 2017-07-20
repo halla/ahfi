@@ -49,8 +49,8 @@ h2 a, h3 a, h4 a { color: #0E805C; }
 a { color: #B3006E; color: #0E805C;}
 a:hover, a:focus  { color: #B3006E; }
 
-p { margin-bottom: 0; }
-p + p {  text-indent: 2em;}
+.article p { margin-bottom: 0; }
+.article p + p {  text-indent: 2em;}
 p img { margin-top: 5px; margin-bottom: 10px;}
 img { max-width: 100%}
 

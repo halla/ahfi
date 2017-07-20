@@ -18,4 +18,8 @@ defmodule Ahfi.PageController do
   def coaching(conn, _params) do
     render conn, "coaching.html"
   end
+
+  def consulting(conn, _params) do
+    render conn, "consulting.html"
+  end
 end

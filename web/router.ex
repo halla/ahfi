@@ -20,6 +20,7 @@ defmodule Ahfi.Router do
     get "/", PageController, :index
     get "/projects/", PageController, :projects
     get "/coaching/", PageController, :coaching
+    get "/consulting/", PageController, :consulting
     get "/blog/", PageController, :blog
     get "/blog/feeds/rss/", PostController, :rss
     get "/blog/:year/:month/:slug/", PostController, :view
