@@ -33,13 +33,14 @@ defmodule Ahfi.Mixfile do
     [{:phoenix, "~> 1.2.0"},
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_ecto, "~> 3.0"},
+     {:plug, "~> 1.3"},
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.6"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      { :earmark, "~> 1.0" },
-     {:timex, "~> 3.0"},
+     {:timex, "~> 3.1"},
      {:comeonin, "~> 2.5"},
      {:distillery, "~> 1.0"},]
 
