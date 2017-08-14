@@ -30,9 +30,9 @@ defmodule Ahfi.PostView do
   end
 
   def rss_date(date) do
-    datetime = Timex.to_datetime({date.year, date.month, date.day})
+      datetime = Timex.to_datetime({date.year, date.month, date.day})
     #to_string(datetime)
-    {:ok, result} = Timex.format(datetime, "{RFC822}")
+    {:ok, result} = Timex.format(datetime, "{RFC1123}")
     result
   end
 
