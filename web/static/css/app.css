@@ -10,6 +10,8 @@ h2, h3, h4 { margin-top: 2em; }
 textarea.form-control { font-size: 20px; padding: 10px 100px; }
 textarea { min-height: 500px; }
 
+
+
 img + em { font-size: 0.9em;
 margin-bottom: 1em;
 display: block;
@@ -61,3 +63,9 @@ ul.projects > li  img { max-width: 300px; margin-top: 2em; }
 .other-sites .col-md-8 { position: static; }
 
 em.tagline { margin-bottom: 0.2em; font-size: 1.1em; display: block }
+
+.consulting form input,
+.consulting form textarea { font-size: 20px; height: auto;}
+.consulting textarea {  padding: 10px 15px; }
+.consulting input[type='text'] { max-width: 25em }
+.consulting textarea { min-height: 300px; max-width: 40em; }

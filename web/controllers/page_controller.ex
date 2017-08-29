@@ -1,6 +1,8 @@
 defmodule Ahfi.PageController do
   use Ahfi.Web, :controller
-
+  alias Ahfi.ContactForm
+  alias Ahfi.Repo
+  
   def index(conn, _params) do
     render conn, "index.html"
   end
@@ -20,6 +22,22 @@ defmodule Ahfi.PageController do
   end
 
   def consulting(conn, _params) do
-    render conn, "consulting.html"
+    contact_changeset = ContactForm.changeset(%ContactForm{})
+    render conn, "consulting.html", contact_changeset: contact_changeset
+  end
+
+  def contact(conn, %{"contact_form" => params}) do
+    changeset = ContactForm.changeset(%ContactForm{}, params)
+    case Repo.insert(changeset) do
+      {:ok, _post} ->
+        conn
+        |> put_flash(:info, "Message sent successfully!")
+        |> redirect(to: page_path(conn, :consulting))
+      {:error, changeset} ->
+        conn
+        |> put_flash(:error, "Sending message not successful.")
+        |> render("consulting.html", contact_changeset: changeset)
+    end
+
   end
 end
