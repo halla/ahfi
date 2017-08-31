@@ -9,7 +9,7 @@ defmodule Ahfi.ContactForm do
     timestamps()
   end
 
-  def changeset(model, params \\ :empty) do
+  def changeset(model, params \\ %{}) do
     model
     |> cast(params, ["email", "name", "body"], [])
     |> validate_length(:body, min: 5)

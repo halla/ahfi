@@ -36,7 +36,7 @@ defmodule Ahfi.Web do
 
       import AhfiWeb.Router.Helpers
       import AhfiWeb.Gettext
-      import Ahfi.Auth, only: [ authenticate_user: 2 ]
+      import AhfiWeb.Auth, only: [ authenticate_user: 2 ]
     end
   end
 
@@ -50,10 +50,10 @@ defmodule Ahfi.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Ahfi.Router.Helpers
-      import Ahfi.ErrorHelpers
-      import Ahfi.Gettext
-      import Ahfi.MyHelpers
+      import AhfiWeb.Router.Helpers
+      import AhfiWeb.ErrorHelpers
+      import AhfiWeb.Gettext
+      import AhfiWeb.MyHelpers
     end
   end
 

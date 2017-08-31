@@ -13,7 +13,7 @@ defmodule AhfiWeb.PageController do
   end
 
   def blog(conn, _params) do
-    posts = Repo.all(from p in Ahfi.PostController.myVisiblePosts(conn), order_by: [desc: p.date_published])
+    posts = Repo.all(from p in AhfiWeb.PostController.myVisiblePosts(conn), order_by: [desc: p.date_published])
     render conn, "blog.html", posts: posts, metaTitle: "Blog"
   end
 

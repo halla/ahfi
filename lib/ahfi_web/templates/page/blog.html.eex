@@ -4,7 +4,7 @@
   <ul class="list-unstyled blog-list-simple">
 
   <%= for post <- @posts do %>
-      <li><%= link post.title, to: post_path(@conn, :view, post.date_published.year, Ahfi.PostView.month(post), post.slug) <> "/" %></li>
+      <li><%= link post.title, to: post_path(@conn, :view, post.date_published.year, AhfiWeb.PostView.month(post), post.slug) <> "/" %></li>
   <% end %>
   </ul>
 

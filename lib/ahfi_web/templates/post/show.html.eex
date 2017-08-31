@@ -7,7 +7,7 @@
       <%= if @current_user do %>
         <%= link "Edit", to: post_path(@conn, :edit, @post.id) %>
       <%= end %>
-      <%= (Earmark.to_html @post.body) |> raw %>
+      <%= (Earmark.as_html! @post.body) |> raw %>
 
       <div class="related-posts">
           <%= if @prevPost do %>

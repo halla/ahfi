@@ -12,7 +12,7 @@
             <link><%= absolute_url(@conn, post) %></link>
             <guid><%= absolute_url(@conn, post) %></guid>
             <pubDate><%= rss_date(post.date_published) %></pubDate>
-            <description><![CDATA[<%= (Earmark.to_html post.body) %>]]></description>
+            <description><![CDATA[<%= (Earmark.as_html! post.body) %>]]></description>
       </item>
       <% end %>
 
