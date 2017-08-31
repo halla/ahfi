@@ -7,7 +7,7 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
 config :ahfi, Ahfi.Endpoint,
-  http: [port: 4000],
+  http: [port: 4001],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
@@ -48,4 +48,8 @@ config :ahfi, :disqus,
   shortname: "anttihalladev"
 
 config :ahfi, :site_url_base, "http://dev.anttihalla.fi"
+
+config :ahfi, :slack, 
+  http_client: HTTPoison
+
 import_config "dev.secret.exs"
