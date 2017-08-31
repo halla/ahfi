@@ -1,9 +1,6 @@
 <div id="content" class="front-page">
   <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <img class="profile" src="<%= static_path(@conn, "/images/antti-cwc-2017-1000px-sq.jpg") %>"> </img>
-        </div>
 
         <div class="intro col-md-9">
           <p>I'm <strong>Antti</strong>, a freelance software engineer from Finland,
@@ -24,6 +21,9 @@
          <a href="https://github.com/halla"><i class="fa fa-3 fa-github" aria-hidden="true"></i></a>
          <!-- <a href="http://twitter.com/AnttiHalla"><i class="fa fa-3 fa-envelope" aria-hidden="true"></i></a> -->
        </p>
+      </div>
+      <div class="col-md-3">
+        <img class="profile" src="<%= static_path(@conn, "/images/antti-cwc-2017-1000px-sq.jpg") %>"> </img>
       </div>
     </div>
     <div class="row">

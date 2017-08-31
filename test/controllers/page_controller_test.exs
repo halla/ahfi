@@ -1,5 +1,5 @@
 defmodule Ahfi.PageControllerTest do
-  use Ahfi.ConnCase
+  use AhfiWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

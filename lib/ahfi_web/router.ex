@@ -1,4 +1,4 @@
-defmodule Ahfi.Router do
+defmodule AhfiWeb.Router do
   use Ahfi.Web, :router
 
   pipeline :browser do
@@ -14,7 +14,7 @@ defmodule Ahfi.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", Ahfi do
+  scope "/", AhfiWeb do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index

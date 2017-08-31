@@ -1,4 +1,4 @@
-defmodule Ahfi.SessionController do
+defmodule AhfiWeb.SessionController do
   use Ahfi.Web, :controller
 
   def new(conn, _params) do

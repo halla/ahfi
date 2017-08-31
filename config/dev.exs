@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :ahfi, Ahfi.Endpoint,
+config :ahfi, AhfiWeb.Endpoint,
   http: [port: 4001],
   debug_errors: true,
   code_reloader: true,
@@ -16,13 +16,13 @@ config :ahfi, Ahfi.Endpoint,
 
 
 # Watch static and templates for browser reloading.
-config :ahfi, Ahfi.Endpoint,
+config :ahfi, AhfiWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
-      ~r{web/views/.*(ex)$},
-      ~r{web/templates/.*(eex)$}
+      ~r{lib/ahfi_web/views/.*(ex)$},
+      ~r{lib/ahfi_web/templates/.*(eex)$}
     ]
   ]
 
@@ -49,7 +49,7 @@ config :ahfi, :disqus,
 
 config :ahfi, :site_url_base, "http://dev.anttihalla.fi"
 
-config :ahfi, :slack, 
+config :ahfi, :slack,
   http_client: HTTPoison
 
 import_config "dev.secret.exs"

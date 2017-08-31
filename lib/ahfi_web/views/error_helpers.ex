@@ -1,4 +1,4 @@
-defmodule Ahfi.ErrorHelpers do
+defmodule AhfiWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """

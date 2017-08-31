@@ -1,4 +1,4 @@
-defmodule Ahfi.ErrorView do
+defmodule AhfiWeb.ErrorView do
   use Ahfi.Web, :view
 
   def render("404.html", _assigns) do

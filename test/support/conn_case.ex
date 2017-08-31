@@ -1,4 +1,4 @@
-defmodule Ahfi.ConnCase do
+defmodule AhfiWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -25,11 +25,11 @@ defmodule Ahfi.ConnCase do
       import Ecto.Changeset
       import Ecto.Query
 
-      import Ahfi.Router.Helpers
+      import AhfiWeb.Router.Helpers
       import Ahfi.TestHelpers
 
       # The default endpoint for testing
-      @endpoint Ahfi.Endpoint
+      @endpoint AhfiWeb.Endpoint
     end
   end
 

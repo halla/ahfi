@@ -8,13 +8,13 @@
         me constantly to learn more. The 10+ years of experience in software development has
         taught me about a range of technologies.
       </p>
-      
+
         <p> I'm a <em>full-stack</em> developer, meaning I can build a
           web service from the ground up. I'm happiest when building prototypes, but I also enjoy being part
         of building continuously improving development processes.</p>
 
 
-  <h2>Mental Coaching</h2>
+  <h2>Generic Coaching</h2>
   <p>I've used digital <em>mind maps</em> as
   my personal information tool for 15 years, which has lead me seek better ways to analyze and organize my thoughts.
   I see computer programming and thinking as similar systemic activities. What you know is your data. What you do is your program.
@@ -29,6 +29,9 @@ It's about developing the mental skill and flexibility to solve any problem that
    <em>Mind on maps: Navigate your thoughts methodically with digital mind maps</em> <a href="https://www.amazon.com/dp/B06X9Q3NBB">(Amazon)</a>.
 </blockquote>
 </p>
+
+  <%= render "contact_form.html", changeset: @contact_changeset, action: "contact" %>
+
   </div>
 </div>
 </div>

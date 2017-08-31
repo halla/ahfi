@@ -1,4 +1,4 @@
-defmodule Ahfi.PostController do
+defmodule AhfiWeb.PostController do
   use Ahfi.Web, :controller
 
   plug :authenticate_user when not (action in [:show, :view, :rss, :index])

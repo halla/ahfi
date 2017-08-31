@@ -1,8 +1,8 @@
-defmodule Ahfi.PageController do
+defmodule AhfiWeb.PageController do
   use Ahfi.Web, :controller
   alias Ahfi.ContactForm
   alias Ahfi.Repo
-  
+
   def index(conn, _params) do
     render conn, "index.html"
   end

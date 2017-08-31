@@ -11,7 +11,7 @@ defmodule Ahfi do
       # Start the Ecto repository
       supervisor(Ahfi.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(Ahfi.Endpoint, []),
+      supervisor(AhfiWeb.Endpoint, []),
       # Start your own worker by calling: Ahfi.Worker.start_link(arg1, arg2, arg3)
       # worker(Ahfi.Worker, [arg1, arg2, arg3]),
     ]

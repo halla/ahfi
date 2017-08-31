@@ -1,4 +1,4 @@
-defmodule Ahfi.LayoutView do
+defmodule AhfiWeb.LayoutView do
   use Ahfi.Web, :view
 
   def gtmcode() do

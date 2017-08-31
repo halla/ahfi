@@ -1,4 +1,4 @@
-defmodule Ahfi.Gettext do
+defmodule AhfiWeb.Gettext do
   @moduledoc """
   A module providing Internationalization with a gettext-based API.
 

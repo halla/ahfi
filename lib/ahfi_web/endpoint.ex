@@ -1,7 +1,7 @@
-defmodule Ahfi.Endpoint do
+defmodule AhfiWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :ahfi
 
-  socket "/socket", Ahfi.UserSocket
+  socket "/socket", AhfiWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -43,5 +43,5 @@ defmodule Ahfi.Endpoint do
     key: "_ahfi_key",
     signing_salt: "Lpg7E2KS"
 
-  plug Ahfi.Router
+  plug AhfiWeb.Router
 end

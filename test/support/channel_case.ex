@@ -1,4 +1,4 @@
-defmodule Ahfi.ChannelCase do
+defmodule AhfiWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -27,7 +27,7 @@ defmodule Ahfi.ChannelCase do
 
 
       # The default endpoint for testing
-      @endpoint Ahfi.Endpoint
+      @endpoint AhfiWeb.Endpoint
     end
   end
 

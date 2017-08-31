@@ -1,4 +1,4 @@
-defmodule Ahfi.MyHelpers do
+defmodule AhfiWeb.MyHelpers do
   use Phoenix.HTML
 
   # http://stackoverflow.com/questions/31572653/apply-css-class-on-element-if-current-page-in-phoenix

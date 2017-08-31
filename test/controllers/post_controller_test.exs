@@ -1,5 +1,5 @@
 defmodule Ahfi.PostControllerTest do
-  use Ahfi.ConnCase
+  use AhfiWeb.ConnCase
 
   alias Ahfi.Post
   @valid_attrs %{body: "some content", date_published: %{day: 17, month: 4, year: 2010}, slug: "some content", title: "some content", is_published: true}

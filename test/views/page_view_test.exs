@@ -1,3 +1,3 @@
 defmodule Ahfi.PageViewTest do
-  use Ahfi.ConnCase, async: true
+  use AhfiWeb.ConnCase, async: true
 end

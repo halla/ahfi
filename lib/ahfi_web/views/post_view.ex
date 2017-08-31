@@ -1,4 +1,4 @@
-defmodule Ahfi.PostView do
+defmodule AhfiWeb.PostView do
   use Ahfi.Web, :view
   use Timex
 

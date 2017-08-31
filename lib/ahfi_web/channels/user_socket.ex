@@ -1,4 +1,4 @@
-defmodule Ahfi.UserSocket do
+defmodule AhfiWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
