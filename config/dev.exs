@@ -54,7 +54,4 @@ config :ahfi, :email,
 
 config :ahfi, :site_url_base, "http://dev.anttihalla.fi"
 
-config :ahfi, :slack,
-  http_client: HTTPoison
-
 import_config "dev.secret.exs"

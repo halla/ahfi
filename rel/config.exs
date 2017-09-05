@@ -41,7 +41,10 @@ end
 release :ahfi do
   set version: current_version(:ahfi)
   set applications: [
-    :runtime_tools
+    :runtime_tools,
+    :gen_smtp,
+    :httpoison,
+    :swoosh,
   ]
   set commands: [
     "migrate": "rel/commands/migrate.sh"

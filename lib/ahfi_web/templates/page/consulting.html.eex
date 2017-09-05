@@ -30,6 +30,7 @@ It's about developing the mental skill and flexibility to solve any problem that
 </blockquote>
 </p>
 
+<h2>Contact</h3>
   <%= render "contact_form.html", changeset: @contact_changeset, action: "contact" %>
 
   </div>

@@ -19,6 +19,9 @@ config :ahfi, AhfiWeb.Endpoint,
            adapter: Phoenix.PubSub.PG2]
 
 
+config :ahfi, :slack,
+  http_client: HTTPoison
+
 config :ahfi, Ahfi.Notifies.Mailer,
   adapter: Swoosh.Adapters.SMTP,
   relay: "localhost"

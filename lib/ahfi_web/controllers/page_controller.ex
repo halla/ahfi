@@ -34,7 +34,9 @@ defmodule AhfiWeb.PageController do
           Ahfi.Contact.Email.send(contact_msg)
           |> Ahfi.Notifies.Mailer.deliver
         end)
-        Ahfi.Notifies.Slack.send!("New contact msg from " <> contact_msg.name)
+        Task.start(fn ->
+          Ahfi.Notifies.Slack.send!("New contact msg from " <> contact_msg.name)
+        end)
         conn
         |> put_flash(:info, "Message sent successfully!")
         |> redirect(to: page_path(conn, :consulting))
