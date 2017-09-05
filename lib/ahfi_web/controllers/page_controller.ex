@@ -29,7 +29,12 @@ defmodule AhfiWeb.PageController do
   def contact(conn, %{"contact_form" => params}) do
     changeset = ContactForm.changeset(%ContactForm{}, params)
     case Repo.insert(changeset) do
-      {:ok, _post} ->
+      {:ok, contact_msg} ->
+        Task.start(fn ->
+          Ahfi.Contact.Email.send(contact_msg)
+          |> Ahfi.Notifies.Mailer.deliver
+        end)
+        Ahfi.Notifies.Slack.send!("New contact msg from " <> contact_msg.name)
         conn
         |> put_flash(:info, "Message sent successfully!")
         |> redirect(to: page_path(conn, :consulting))

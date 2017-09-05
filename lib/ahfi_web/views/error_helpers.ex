@@ -32,9 +32,9 @@ defmodule AhfiWeb.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(Ahfi.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(AhfiWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(Ahfi.Gettext, "errors", msg, opts)
+      Gettext.dgettext(AhfiWeb.Gettext, "errors", msg, opts)
     end
   end
 end

@@ -48,8 +48,8 @@ config :ahfi, :disqus,
   shortname: "anttihalladev"
 
 config :ahfi, :email,
-  from: {"Antti", "anttih@localhost"}
-  to: {"Antti", "anttih@localhost"},
+  from: {"Antti", "anttih@localhost"},
+  to: {"Antti", "anttih@localhost"}
 
 
 config :ahfi, :site_url_base, "http://dev.anttihalla.fi"

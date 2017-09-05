@@ -2,12 +2,13 @@ defmodule Ahfi.Contact.Email do
   import Swoosh.Email
   alias Ahfi.ContactForm
 
-  @name Application.get_env(:ahfi, :email)[:name]
-  @address Application.get_env(:ahfi, :email)[:address]
+
+  @from Application.get_env(:ahfi, :email)[:from]
+  @to Application.get_env(:ahfi, :email)[:to]
   def send(%ContactForm{} = form) do
       new
-      |> to({@name, @address})
-      |> from({"anttihalla.fi", "no-reply@anttihalla.fi"})
+      |> to(@to)
+      |> from(@from)
       |> subject("[AHFI] Contact from " <> form.name)
       |> text_body(form.body)
   end
