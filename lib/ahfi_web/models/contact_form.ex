@@ -12,6 +12,7 @@ defmodule Ahfi.ContactForm do
   def changeset(model, params \\ %{}) do
     model
     |> cast(params, ["email", "name", "body"], [])
+    |> validate_required([:name, :email, :body])
     |> validate_length(:body, min: 5)
     |> validate_format(:email, ~r/@/)
   end
