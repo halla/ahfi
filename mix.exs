@@ -44,7 +44,9 @@ defmodule Ahfi.Mixfile do
      {:httpoison, "~> 0.13"},
      {:poison, "~> 3.1"},
      {:comeonin, "~> 2.5"},
-     {:distillery, "~> 1.0"},]
+     {:distillery, "~> 1.0"},
+     {:swoosh, "~> 0.9.1"},
+     {:gen_smtp, "~> 0.12.0"}]
 
   end
 

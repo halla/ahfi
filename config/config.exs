@@ -18,6 +18,11 @@ config :ahfi, AhfiWeb.Endpoint,
   pubsub: [name: Ahfi.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
+
+config :ahfi, Ahfi.Notifies.Mailer,
+  adapter: Swoosh.Adapters.SMTP,
+  relay: "localhost"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
