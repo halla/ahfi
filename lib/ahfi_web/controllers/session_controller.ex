@@ -6,7 +6,7 @@ defmodule AhfiWeb.SessionController do
   end
 
   def create(conn, %{ "session" => %{ "password" => password }}) do
-    case Ahfi.Auth.login_with_password(conn, password) do
+    case AhfiWeb.Auth.login_with_password(conn, password) do
       {:ok, conn} ->
         conn
           |> put_flash(:info, "Login succesful.")
@@ -20,7 +20,7 @@ defmodule AhfiWeb.SessionController do
 
   def delete(conn, _params) do
     conn
-      |> Ahfi.Auth.logout()
+      |> AhfiWeb.Auth.logout()
       |> put_flash(:info, "Logged out.")
       |> redirect(to: page_path(conn, :index))
   end

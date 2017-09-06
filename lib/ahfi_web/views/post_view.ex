@@ -19,7 +19,7 @@ defmodule AhfiWeb.PostView do
     "#{date.year}-#{month(date)}-#{date.day}"
   end
 
-  def disqus_shortname do
+  def disqus_shortname() do
     Application.get_env(:ahfi, :disqus)[:shortname]
   end
 

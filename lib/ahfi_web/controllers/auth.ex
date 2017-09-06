@@ -2,7 +2,7 @@ defmodule AhfiWeb.Auth do
   import Plug.Conn
   import Comeonin.Bcrypt, only: [checkpw: 2, dummy_checkpw: 0]
   import Phoenix.Controller
-  alias Ahfi.Router.Helpers
+  alias AhfiWeb.Router.Helpers
 
   def init(_opts) do
 

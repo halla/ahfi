@@ -14,27 +14,27 @@
 
         <%= if @conn.assigns[:metaTitle] do %>
             <title><%= @metaTitle %> | Antti Halla</title>
-        <%= else %>
+        <% else %>
             <title>Antti Halla</title>
-        <%= end %>
+        <% end %>
 
         <%= if @conn.assigns[:metaDescription] do %>
             <meta name="description" content="<%= @metaDescription %>">
-        <%= else %>
+        <% else %>
             <meta name="description" content="Refactoring code and thoughts. Adapting to environments. Meta-hopping with mind maps.">
-        <%= end %>
+        <% end %>
 
 
     </head>
     <body>
     <!-- Google Tag Manager -->
-       <noscript><iframe src="//www.googletagmanager.com/ns.html?id=<%= gtmcode %>"
+       <noscript><iframe src="//www.googletagmanager.com/ns.html?id=<%= gtmcode() %>"
        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-       })(window,document,'script','dataLayer','<%= gtmcode %>');</script>
+     })(window,document,'script','dataLayer','<%= gtmcode() %>');</script>
        <!-- End Google Tag Manager -->
 
 
@@ -47,12 +47,12 @@
                  <div class="col-md-6">
                    <nav role="navigation">
                     <ul class="nav nav-pills pull-right">
-                      <li><%= link "Home", to: page_path(@conn, :index), class: active_class(@conn, page_path(@conn, :index)) %></li>                      
+                      <li><%= link "Home", to: page_path(@conn, :index), class: active_class(@conn, page_path(@conn, :index)) %></li>
                       <li><%= link "Consulting", to: page_path(@conn, :consulting), class: active_class(@conn, page_path(@conn, :consulting)) %></li>
                       <li><%= link "Blog", to: page_path(@conn, :blog), class: active_class(@conn, page_path(@conn, :blog)) %></li>
                       <%= if @current_user do %>
                         <li><%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %></li>
-                      <%= end %>
+                      <% end %>
 
                     </ul>
                   </nav>
