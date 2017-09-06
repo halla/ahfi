@@ -1,5 +1,5 @@
 <div id="content" class="front-page">
-  <div class="container">
+  <div class="container introduction section">
       <div class="row">
 
         <div class="intro col-md-9">
@@ -26,23 +26,31 @@
         <img class="profile" src="<%= static_path(@conn, "/images/antti-cwc-2017-1000px-sq.jpg") %>"> </img>
       </div>
     </div>
+    <h2>Latest</h2>
+    <br>
     <div class="row">
+      <div class="col-md-4">
+        <img style="border: 1px solid #eee" src="<%= static_path(@conn, "/images/mind-on-maps-kindle-cover-1-bord-portr-1024x683.jpg") %>" />
+      </div>
       <div class="col-md-8">
 
-        <h2>Latest</h2>
-        <h3>My book Mind on Maps released</h3>
+        <h3>My book Mind on Maps released!</h3>
         <p>
-          <em>Mind on Maps -- Navigate your thoughts methodically with digital mind maps</em> is available on <a href="https://www.amazon.com/Mind-Maps-Navigate-thoughts-methodically/dp/9526857046"> Amazon</a>.
-          Check out the <%= link "Mind on Maps website", to: "https://mindonmaps.com" %> for more info.
-          <p>
 
+          <em>Mind on Maps -- Navigate your thoughts methodically with digital mind maps</em> is available on <a href="https://www.amazon.com/Mind-Maps-Navigate-thoughts-methodically/dp/9526857046"> Amazon</a>.
+          See <%= link "Mind on Maps website", to: "https://mindonmaps.com" %> for info.
+
+            <a href="https://www.amazon.com/Mind-Maps-Navigate-thoughts-methodically/dp/9526857046">
+              <img style="max-width: 150px; height: 100%" src="<%= static_path(@conn, "/images/amazon-logo_transparent-300x145.png") %>" alt="Available at Amazon" class="alignnone size-medium wp-image-333" srcset="https://mindonmaps.com/wp-content/uploads/2016/10/amazon-logo_transparent-300x145.png 300w, https://mindonmaps.com/wp-content/uploads/2016/10/amazon-logo_transparent.png 580w" sizes="(max-width: 300px) 100vw, 300px" width="300" height="145"></a>
+
+  </div>
+
+  </div>
   <h2>Projects</h2>
-  <p>Head over to the <%= link "project", to: page_path(@conn, :projects) %> page to find out what I'm up to at the moment. </p>
+  <em>What I'm up to at the moment...</em>
+  <%= render "projects.html", conn: @conn %>
   <h2>Blog</h2>
   <p>In the <%= link "blog", to: page_path(@conn, :blog) %>
     I time to time write <em>(only in Finnish for now)</em> about what I've learned on the way.  </p>
-  </div>
-</div>
-
   </div>
 </div>

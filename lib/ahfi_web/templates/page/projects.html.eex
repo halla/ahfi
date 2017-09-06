@@ -1,48 +1,59 @@
-<div class="container projects">
+<div class="section projects">
   <ul class="list-unstyled projects other-sites">
     <li class="row">
       <div class="col-md-4">
+        <a href="https://mindonmaps.com">
         <img src="<%= static_path(@conn, "/images/center_black1_fb.jpg") %>" />
+        </a>
       </div>
       <div class="col-md-8">
-        <h2>Mind on Maps</h2>
-        <a href="http://mindonmaps.com"></a><em class="tagline">Navigate your thoughts methodically with digital mind maps.</em>
+        <h3>Mind on Maps</h3>
+        <em class="tagline">Navigate your thoughts methodically with digital mind maps.</em>
         <p>I've been using digital <em>mind maps</em> as my daily go-to cognitive tool for over 10 years now. During those
           years I've moved from a collection of a dozen scattered maps to a connected system spanning hundreds of them.
-          I wrote a book about my experience.
+          I wrote a book about my experience.</p>
+          <a href="https://mindonmaps.com">https://mindonmaps.com</a>
       </div>
     </li>
     <li class="row">
       <div class="col-md-4">
+        <a href="http://www.anywhereism.net">
         <img src="<%= static_path(@conn, "/images/antti-mirje-innsbruck-340x200.jpg") %>" />
+      </a>
       </div>
       <div class="col-md-8">
-        <h2>Anywhereism</h2>
+        <h3>Anywhereism</h3>
         <em class="tagline">A journey as digital nomads. </em>
         Me and my wife have been working 99% online and living out of our backpacks since January 2013. We occasionally write updates about our travels.
         As of beginning of 2017, we're setting up a base in Finland and slowing down a bit, welcoming a third member to our family.
-        <a href="http://www.anywhereism.net"></a>
+      </p>
+        <a href="http://www.anywhereism.net">http://www.anywhereism.net</a>
       </div>
     </li>
 
     <li class="row">
       <div class="col-md-4">
+        <a href="http://www.anywheris.com">
         <img src="<%= static_path(@conn, "/images/anywheris_logo.png") %>" />
+      </a>
       </div>
       <div class="col-md-8">
-        <h2>Anywheris</h2>
-        <a href="http://www.anywheris.com"></a>Our company.
+        <h3>Anywheris</h3>
         <p>
           Do you have a software project that would use the help of an experienced full-stack developer in the team?
           I'm available for part-time, remote contract work.
+          Our company.
         </p>
+          <a href="http://www.anywheris.com">http://www.anywheris.com</a>
       </div>
     </li>
   </ul>
 
   <div class="cognitools block">
   <h2>Cognitools</h2>
-  <em>Tools and prototypes for computer assisted thinking and learning. </em>
+  <em>Tools and prototypes for computer assisted thinking and learning. Computers enable us to think in ways
+   that we naturally can't and make many other thought processes much easier. Mind maps are one way to extend our cognitive capabilities but
+ they only solve a specific set of problems. These kinds of tools are something I love to work on whenever I have the time. </em>
 
       <ul class="list-unstyled">
           <li><%= link "Socrateaser", to: static_path(@conn, "/socrateaser/") %>

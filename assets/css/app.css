@@ -1,11 +1,10 @@
 /* This file is for your main application css. */
 body { margin-top: 0; }
 
-h2, h3, h4 { margin-top: 2em; }
+h2  { margin-top: 2em; }
 
 .front-page .cognitools { margin-bottom: 2em}
 .front-page .cognitools ul { margin: 0.5em 0}
-.front-page .cognitools a { text-transform: uppercase; letter-spacing: 0.04em;}
 
 textarea.form-control { font-size: 20px; padding: 10px 100px; }
 textarea { min-height: 500px; }
@@ -20,6 +19,7 @@ line-height: 1.4;
 padding: 0 22px;
 }
 
+
 .ingress {
     font-style: italic;
     font-size: 1.2em;
@@ -33,6 +33,7 @@ padding: 0 22px;
   font-size: 1.5em;
   color: #444;
 }
+#header h2 { margin-top: 1em; }
 
 #header nav ul { margin-top: 0.5em }
 #header nav a {
@@ -52,14 +53,14 @@ padding: 0 22px;
 
 .front-page .intro { margin-bottom: 2em; }
 .front-page .intro strong { font-style: normal; }
-.front-page img.profile { margin-top: 1em; }
+.front-page img.profile { margin-top: 1em; max-width: 300px}
 .front-page .intro p.social-icons { text-align: center; padding-right: 4em; margin-top: 2em }
-.front-page h2 { margin-top: 1em; }
+.sfront-page h2 { margin-top: 1em; }
 .social-icons a { color: #333; margin-right: 15px; font-size: 1.4em;  }
 
 
 ul.projects > li { overflow: hidden; }
-ul.projects > li  img { max-width: 300px; margin-top: 2em; }
+ul.projects > li  img {width: 100%; max-width: 300px;  }
 .other-sites .col-md-8 { position: static; }
 
 em.tagline { margin-bottom: 0.2em; font-size: 1.1em; display: block }

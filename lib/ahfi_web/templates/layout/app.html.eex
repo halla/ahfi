@@ -47,9 +47,8 @@
                  <div class="col-md-6">
                    <nav role="navigation">
                     <ul class="nav nav-pills pull-right">
-                      <li><%= link "Home", to: page_path(@conn, :index), class: active_class(@conn, page_path(@conn, :index)) %></li>
-                      <li><%= link "Projects", to: page_path(@conn, :projects), class: active_class(@conn, page_path(@conn, :projects)) %></li>
-                      <li><%= link "Consulting", to: page_path(@conn, :consulting), class: active_class(@conn, page_path(@conn, :consulting)) %></li>                      
+                      <li><%= link "Home", to: page_path(@conn, :index), class: active_class(@conn, page_path(@conn, :index)) %></li>                      
+                      <li><%= link "Consulting", to: page_path(@conn, :consulting), class: active_class(@conn, page_path(@conn, :consulting)) %></li>
                       <li><%= link "Blog", to: page_path(@conn, :blog), class: active_class(@conn, page_path(@conn, :blog)) %></li>
                       <%= if @current_user do %>
                         <li><%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %></li>
@@ -100,7 +99,7 @@
         <a href="http://about.me/antti.halla">About</a>
       </li>
     </ul>
-     Created with <a href="http://www.phoenixframework.org/">Phoenix Framework</a> / <a href="http://elixir-lang.org/">Elixir</a> &nbsp;&nbsp;&nbsp;&nbsp;Antti Halla 2016
+     Created with <a href="http://www.phoenixframework.org/">Phoenix Framework</a> / <a href="http://elixir-lang.org/">Elixir</a> &nbsp;&nbsp;&nbsp;&nbsp;Antti Halla 2017
   </div>
 </div>
     <script>window.userToken="<%= assigns.user_token %>"</script>
