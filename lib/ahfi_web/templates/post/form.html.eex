@@ -31,6 +31,12 @@
   </div>
 
   <div class="form-group">
+    <%= label f, :featured_image, class: "control-label" %>
+    <%= text_input f, :featured_image, class: "form-control" %>
+    <%= error_tag f, :featured_image %>
+  </div>
+
+  <div class="form-group">
     <%= label f, :is_published, class: "control-label" %>
     <%= checkbox f, :is_published, class: "form-control" %>
     <%= error_tag f, :is_published %>
