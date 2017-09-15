@@ -9,6 +9,9 @@ defmodule AhfiWeb.Endpoint do
   # when deploying your static files in production.
 
   plug Plug.Static,
+    at: "/files/", from: "files", gzip: false    
+
+  plug Plug.Static,
     at: "/static/", from: :ahfi, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt apps media)
 

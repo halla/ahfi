@@ -1,0 +1,14 @@
+<h2>Show Media</h2>
+
+<ul>
+
+  <li>
+    <strong>Filename:</strong>
+    <%= @media.filename %>
+  </li>
+
+</ul>
+<%= (Earmark.as_html! (render_media @media)) |> raw %>
+
+<span><%= link "Edit", to: media_path(@conn, :edit, @media) %></span>
+<span><%= link "Back", to: media_path(@conn, :index) %></span>
