@@ -42,6 +42,7 @@ config :ahfi, Ahfi.Repo,
   hostname: "localhost",
   pool_size: 10
 
+config :ahfi, files_path: "files/" # dev folder, trailing slash
 config :ahfi, :gtm, id: "dev"
 
 config :ahfi, :disqus,

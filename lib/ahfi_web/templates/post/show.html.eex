@@ -1,14 +1,19 @@
 
 <div class="container article">
+  <div class="row">
+  <div class="col-sm-12">
+    <div class="featured-image">
+      <%= if @post.featured_image do  %>
+      <img src="<%= @post.featured_image %>" />
+      <%= end %>
+    </div>
+  </div>
+</div>
 
   <div class="row">
 
     <div class="col-md-9">
-      <% if @post.featured_image do %>
-        <div class="featured-image">
-          <img src="<%= @post.featured_image %>" />
-        </div>
-      <% end %>
+
       <h1><%= @post.title %></h1>
       <%= if @current_user do %>
         <%= link "Edit", to: post_path(@conn, :edit, @post.id) %>

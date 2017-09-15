@@ -27,9 +27,13 @@ defmodule AhfiWeb.Router do
     get "/blog/:year/:month/:slug/", PostController, :view
 
     resources "/posts", PostController
-    resources "/media", MediaController
     resources "/sessions", SessionController, only: [:new, :create, :delete]
+  end
 
+  scope "/admin/", AhfiWeb do
+    pipe_through :browser # Use the default browser stack
+
+    resources "/media", MediaController
   end
 
   # Other scopes may use custom stacks.

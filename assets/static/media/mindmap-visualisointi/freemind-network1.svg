@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   contentScriptType="text/ecmascript"
+   width="668.0"
+   zoomAndPan="magnify"
+   contentStyleType="text/css"
+   viewBox="-194.000000 -124.000000 668.000000 568.000000"
+   height="568.0"
+   preserveAspectRatio="xMidYMid meet"
+   version="1.1"
+   id="svg4427"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="freemind-network1.svg">
+  <metadata
+     id="metadata4550">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4548" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2048"
+     inkscape:window-height="1093"
+     id="namedview4546"
+     showgrid="false"
+     inkscape:zoom="1.5880282"
+     inkscape:cx="334"
+     inkscape:cy="284"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4427" />
+  <g
+     id="edges">
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M -9.666061,25.463348 L 136.701935,139.501724"
+       class="7 0"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4430" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 102.431999,429.888489 L -39.394302,192.897919"
+       class="3 5"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4432" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M -142.134033,96.163513 L -39.394302,192.897919"
+       class="4 5"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4434" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 136.701935,139.501724 L -39.394302,192.897919"
+       class="0 5"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4436" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 263.211609,309.593384 L 102.431999,429.888489"
+       class="1 3"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4438" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 461.829742,302.010040 L 102.431999,429.888489"
+       class="2 3"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4440" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 136.701935,139.501724 L 397.771912,169.017700"
+       class="0 6"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4442" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 397.771912,169.017700 L 263.211609,309.593384"
+       class="6 1"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4444" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 397.771912,169.017700 L 461.829742,302.010040"
+       class="6 2"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4446" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 302.424377,0.056961 L 136.701935,139.501724"
+       class="8 0"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4448" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M -161.433975,234.191895 L -39.394302,192.897919"
+       class="9 5"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4450" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M -184.781006,10.722015 L -9.666061,25.463348"
+       class="10 7"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4452" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M -79.626617,-19.783936 L -9.666061,25.463348"
+       class="11 7"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4454" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 196.391968,-114.162262 L 302.424377,0.056961"
+       class="12 8"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4456" />
+    <path
+       fill="none"
+       stroke-width="1.0"
+       d="M 374.014130,-107.929993 L 302.424377,0.056961"
+       class="13 8"
+       stroke-opacity="1.0"
+       stroke="#000000"
+       id="path4458" />
+  </g>
+  <g
+     id="nodes">
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="16.0"
+       cx="136.70193"
+       class="0"
+       cy="139.50172"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4461" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="11.333334"
+       cx="263.2116"
+       class="1"
+       cy="309.59338"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4463" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="11.333334"
+       cx="461.82974"
+       class="2"
+       cy="302.01004"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4465" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="13.666667"
+       cx="102.432"
+       class="3"
+       cy="429.8885"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4467" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="9.0"
+       cx="-142.13403"
+       class="4"
+       cy="96.16351"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4469" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="16.0"
+       cx="-39.394302"
+       class="5"
+       cy="192.89792"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4471" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="13.666667"
+       cx="397.7719"
+       class="6"
+       cy="169.0177"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4473" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="13.666667"
+       cx="-9.666061"
+       class="7"
+       cy="25.463348"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4475" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="13.666667"
+       cx="302.42438"
+       class="8"
+       cy="0.05696106"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4477" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="9.0"
+       cx="-161.43398"
+       class="9"
+       cy="234.1919"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4479" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="9.0"
+       cx="-184.781"
+       class="10"
+       cy="10.722015"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4481" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="9.0"
+       cx="-79.62662"
+       class="11"
+       cy="-19.783936"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4483" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="9.0"
+       cx="196.39197"
+       class="12"
+       cy="-114.16226"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4485" />
+    <circle
+       fill-opacity="0.3"
+       fill="#000000"
+       r="9.0"
+       cx="374.01413"
+       class="13"
+       cy="-107.92999"
+       stroke="#000000"
+       stroke-opacity="0.3"
+       stroke-width="1.0"
+       id="circle4487" />
+  </g>
+  <g
+     id="node-labels">
+    <rect
+       fill="#000000"
+       x="88.41645"
+       width="100.30663"
+       height="29.41536"
+       y="117.98447"
+       opacity="0.0"
+       id="rect4490" />
+    <text
+       font-size="38"
+       x="136.70193"
+       y="146.85556"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="0"
+       id="text4492">
+            Index
+        </text>
+    <rect
+       fill="#000000"
+       x="207.50873"
+       width="114.06006"
+       height="26.129883"
+       y="295.61218"
+       opacity="0.0"
+       id="rect4494" />
+    <text
+       font-size="27"
+       x="263.2116"
+       y="316.12585"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="1"
+       id="text4496">
+            Project 1
+        </text>
+    <rect
+       fill="#000000"
+       x="406.23233"
+       width="113.84909"
+       height="26.129883"
+       y="288.02884"
+       opacity="0.0"
+       id="rect4498" />
+    <text
+       font-size="27"
+       x="461.82974"
+       y="308.5425"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="2"
+       id="text4500">
+            Project 2
+        </text>
+    <rect
+       fill="#000000"
+       x="12.509148"
+       width="183.08984"
+       height="24.535156"
+       y="411.95978"
+       opacity="0.0"
+       id="rect4502" />
+    <text
+       font-size="33"
+       x="102.432"
+       y="436.02228"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="3"
+       id="text4504">
+            Resource A
+        </text>
+    <rect
+       fill="#000000"
+       x="-181.91951"
+       width="81.024734"
+       height="21.291016"
+       y="84.77142"
+       opacity="0.0"
+       id="rect4506" />
+    <text
+       font-size="22"
+       x="-142.13403"
+       y="101.48627"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="4"
+       id="text4508">
+            Study 1
+        </text>
+    <rect
+       fill="#000000"
+       x="-101.53085"
+       width="128.00879"
+       height="36.77539"
+       y="173.22067"
+       opacity="0.0"
+       id="rect4510" />
+    <text
+       font-size="38"
+       x="-39.394302"
+       y="202.09177"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="5"
+       id="text4512">
+            Library
+        </text>
+    <rect
+       fill="#000000"
+       x="336.11713"
+       width="126.55371"
+       height="31.936523"
+       y="151.92957"
+       opacity="0.0"
+       id="rect4514" />
+    <text
+       font-size="33"
+       x="397.7719"
+       y="177.00183"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="6"
+       id="text4516">
+            Projects
+        </text>
+    <rect
+       fill="#000000"
+       x="-41.1541"
+       width="66.220215"
+       height="24.535156"
+       y="7.5346375"
+       opacity="0.0"
+       id="rect4518" />
+    <text
+       font-size="33"
+       x="-9.666061"
+       y="31.597137"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="7"
+       id="text4520">
+            Past
+        </text>
+    <rect
+       fill="#000000"
+       x="252.7337"
+       width="102.62549"
+       height="24.535156"
+       y="-17.87175"
+       opacity="0.0"
+       id="rect4522" />
+    <text
+       font-size="33"
+       x="302.42438"
+       y="6.19075"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="8"
+       id="text4524">
+            Future
+        </text>
+    <rect
+       fill="#000000"
+       x="-201.13351"
+       width="80.85286"
+       height="21.291016"
+       y="222.7998"
+       opacity="0.0"
+       id="rect4526" />
+    <text
+       font-size="22"
+       x="-161.43398"
+       y="239.51465"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="9"
+       id="text4528">
+            Study 2
+        </text>
+    <rect
+       fill="#000000"
+       x="-221.86482"
+       width="75.621414"
+       height="20.904297"
+       y="-0.38003576"
+       opacity="0.0"
+       id="rect4530" />
+    <text
+       font-size="22"
+       x="-184.781"
+       y="15.94809"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="10"
+       id="text4532">
+            Story 1
+        </text>
+    <rect
+       fill="#000000"
+       x="-116.624504"
+       width="75.44955"
+       height="20.904297"
+       y="-30.885986"
+       opacity="0.0"
+       id="rect4534" />
+    <text
+       font-size="22"
+       x="-79.62662"
+       y="-14.557861"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="11"
+       id="text4536">
+            Story 2
+        </text>
+    <rect
+       fill="#000000"
+       x="165.6729"
+       width="63.600906"
+       height="17.029945"
+       y="-126.61962"
+       opacity="0.0"
+       id="rect4538" />
+    <text
+       font-size="22"
+       x="196.39197"
+       y="-109.90478"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="12"
+       id="text4540">
+            Plan 1
+        </text>
+    <rect
+       fill="#000000"
+       x="343.38098"
+       width="63.429047"
+       height="17.029945"
+       y="-120.38735"
+       opacity="0.0"
+       id="rect4542" />
+    <text
+       font-size="22"
+       x="374.01413"
+       y="-103.67251"
+       fill="#000000"
+       style="text-anchor: middle; dominant-baseline: central;"
+       font-family="Dialog"
+       class="13"
+       id="text4544">
+            Plan 2
+        </text>
+  </g>
+</svg>

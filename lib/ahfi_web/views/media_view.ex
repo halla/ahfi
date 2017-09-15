@@ -5,7 +5,7 @@ defmodule AhfiWeb.MediaView do
   @files_path Application.get_env(:ahfi, :files_path)
   def render_media(media) do
     """
-    <img src="#{"/" <> @files_path <> media.filename}" />
+    <img src="#{"/media/" <> media.filename}" />
     """
   end
 end

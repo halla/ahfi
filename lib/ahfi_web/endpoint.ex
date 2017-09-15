@@ -1,6 +1,8 @@
 defmodule AhfiWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :ahfi
 
+  @files_path Application.get_env(:ahfi, :files_path)
+  
   socket "/socket", AhfiWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
@@ -9,7 +11,7 @@ defmodule AhfiWeb.Endpoint do
   # when deploying your static files in production.
 
   plug Plug.Static,
-    at: "/files/", from: "files", gzip: false    
+    at: "/media/", from: @files_path, gzip: false
 
   plug Plug.Static,
     at: "/static/", from: :ahfi, gzip: false,

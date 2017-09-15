@@ -70,3 +70,7 @@ em.tagline { margin-bottom: 0.2em; font-size: 1.1em; display: block }
 .consulting textarea {  padding: 10px 15px; }
 .consulting input[type='text'] { max-width: 25em }
 .consulting textarea { min-height: 300px; max-width: 40em; }
+
+.post .featured-image { min-height: 10rem}
+.post .featured-image img { max-height: 40vh; }
+.article h1 { margin-top: 5rem }

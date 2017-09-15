@@ -26,7 +26,7 @@
 
 
     </head>
-    <body>
+    <body class="<%= body_tags(assigns) %>">
     <!-- Google Tag Manager -->
        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=<%= gtmcode() %>"
        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
