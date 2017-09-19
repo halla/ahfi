@@ -6,8 +6,8 @@ h2  { margin-top: 2em; }
 .front-page .cognitools { margin-bottom: 2em}
 .front-page .cognitools ul { margin: 0.5em 0}
 
-textarea.form-control { font-size: 20px; padding: 10px 100px; }
-textarea { min-height: 500px; }
+textarea.form-control { font-size: 20px; padding: 20px 50px; }
+textarea { min-height: 500px;  }
 
 
 
@@ -74,3 +74,6 @@ em.tagline { margin-bottom: 0.2em; font-size: 1.1em; display: block }
 .post .featured-image { min-height: 10rem}
 .post .featured-image img { max-height: 40vh; }
 .article h1 { margin-top: 5rem }
+
+
+body.admin-user .admin-column {  width: 15em; position:fixed }

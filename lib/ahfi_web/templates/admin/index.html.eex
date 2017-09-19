@@ -1,0 +1,14 @@
+<div class="admin-panel">
+
+  <div class="nav-column">
+    <%= render "admin_menu.html" %>    
+  </div>
+  <div class="content-panel">
+    content
+  </div>
+</div>
+<style>
+  .admin-panel { display: flex; }
+  .admin-panel .nav-column { display: flex; min-width: 10em; }
+  .admin-panel .content-panel { flex: 1 }
+</style>

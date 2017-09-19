@@ -1,0 +1,5 @@
+<ul class="list-unstyled">
+  <li><h3>Posts</h3></li>
+  <li><%= link "List", to: post_path(@conn, :index) %></li>
+  <li><%= link "New Post", to: post_path(@conn, :new) %></li>
+</ul>
