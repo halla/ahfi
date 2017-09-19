@@ -59,3 +59,6 @@ On server
 * sudo systemctl restart ahfi
 * check permissions /srv/www/ahfi_prod/var especially
 * chmod g+s directory/  --sticky for default group ownership (www-data)
+
+* Migrations
+  * bin/ahfi migrate

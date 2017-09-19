@@ -6,19 +6,19 @@
     </div>
   <% end %>
   <div class="form-group">
-    <%= label f, :name, class: "control-label", title: "Your name" %>
+    <%= label f, :name, "Your name", class: "control-label" %>
     <%= text_input f, :name, class: "form-control" %>
     <%= error_tag f, :name %>
   </div>
 
   <div class="form-group">
-    <%= label f, :email, class: "control-label" %>
+    <%= label f, :email, "Your email address", class: "control-label" %>
     <%= text_input f, :email, class: "form-control" %>
     <%= error_tag f, :email %>
   </div>
 
   <div class="form-group">
-    <%= label f, :body, class: "control-label" %>
+    <%= label f, :body, "Your message", class: "control-label" %>
     <%= textarea f, :body, class: "form-control" %>
     <%= error_tag f, :body %>
   </div>

@@ -50,10 +50,6 @@
                       <li><%= link "Home", to: page_path(@conn, :index), class: active_class(@conn, page_path(@conn, :index)) %></li>
                       <li><%= link "Consulting", to: page_path(@conn, :consulting), class: active_class(@conn, page_path(@conn, :consulting)) %></li>
                       <li><%= link "Blog", to: page_path(@conn, :blog), class: active_class(@conn, page_path(@conn, :blog)) %></li>
-                      <%= if @current_user do %>
-                        <li><%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %></li>
-                      <% end %>
-
                     </ul>
                   </nav>
                  </div>
@@ -64,11 +60,14 @@
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
-
+      <%= if @current_user do %>
+      <div class="admin-column">
+        <%= render AhfiWeb.AdminView, "admin_menu.html", conn: @conn, current_user: @current_user  %>
+      </div>
+      <% end %>
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
-
 
     <div id="footer">
   <div class="container">

@@ -1,6 +1,9 @@
-<h2>Edit post</h2>
 
+<div class="container">
+  <h2>Edit post</h2>
 <%= render "form.html", changeset: @changeset,
                         action: post_path(@conn, :update, @post) %>
 
                       <div class="container"><%= link "View post", to: post_path(@conn, :show, @post.id) %> </div>
+
+</div>

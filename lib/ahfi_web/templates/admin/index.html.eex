@@ -1,10 +1,8 @@
-<div class="admin-panel">
+<div class="admin-panel container">
 
-  <div class="nav-column">
-    <%= render "admin_menu.html" %>    
-  </div>
+
   <div class="content-panel">
-    content
+    Dashboard content, tbd
   </div>
 </div>
 <style>

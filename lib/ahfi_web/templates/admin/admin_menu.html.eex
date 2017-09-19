@@ -1,5 +1,14 @@
 <ul class="list-unstyled">
+  <li><%= link "Dashboard", to: admin_path(@conn, :index) %></li>
+
   <li><h3>Posts</h3></li>
   <li><%= link "List", to: post_path(@conn, :index) %></li>
   <li><%= link "New Post", to: post_path(@conn, :new) %></li>
+
+  <h3>Media</h3>
+  <li><%= link "Upload", to: media_path(@conn, :new) %></li>
+  <li><%= link "List", to: media_path(@conn, :index) %></li>
+
+  <h3>User</h3>
+  <li><%= link "Log out", to: session_path(@conn, :delete, @current_user), method: "delete" %></li>
 </ul>

@@ -1,3 +1,4 @@
+<div class="container">
 <h2>Listing Media</h2>
 
 <table class="table">
@@ -24,3 +25,4 @@
 </table>
 
 <span><%= link "New Media", to: media_path(@conn, :new) %></span>
+</div>
