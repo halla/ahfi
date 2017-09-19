@@ -7,6 +7,7 @@ defmodule Ahfi.CMS do
   alias Ahfi.Repo
 
   alias Ahfi.CMS.Media
+  alias Ahfi.Post
 
   @doc """
   Returns the list of media.
@@ -109,5 +110,19 @@ defmodule Ahfi.CMS do
   """
   def change_media(%Media{} = media) do
     Media.changeset(media, %{})
+  end
+
+
+
+  def list_posts_for_user(user) do
+    query = if user do
+      from p in Post,
+      order_by: [desc: p.date_published]
+    else
+      from p in Post,
+      where: p.is_published == true,
+      order_by: [desc: p.date_published]
+    end
+    Repo.all(query)
   end
 end

@@ -4,6 +4,7 @@ defmodule AhfiWeb.PostController do
   plug :authenticate_user when not (action in [:show, :view, :rss, :index])
 
   alias Ahfi.Post
+  alias Ahfi.CMS
 
   def myVisiblePosts(conn) do
     user = conn.assigns.current_user
@@ -15,13 +16,13 @@ defmodule AhfiWeb.PostController do
   end
 
   def index(conn, _params) do
-    posts = Repo.all(myVisiblePosts(conn))
+    posts = CMS.list_posts_for_user(conn.assigns.current_user)
     render(conn, "index.html", posts: posts)
   end
 
   def new(conn, _params) do
     changeset = Post.changeset(%Post{})
-    render(conn, "new.html", changeset: changeset)
+    render(conn, "new.html", changeset: changeset, body_tags: ["admin"])
   end
 
   def create(conn, %{"post" => post_params}) do
@@ -58,7 +59,7 @@ defmodule AhfiWeb.PostController do
       prevPost = Repo.one(query2)
       render(conn,
           "show.html",
-
+          body_tags: ["post"],
           post: post,
           metaTitle: post.title,
           metaDescription: String.slice(post.body, 0, 150),
