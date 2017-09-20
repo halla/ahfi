@@ -26,9 +26,7 @@ defmodule AhfiWeb.PostController do
   end
 
   def create(conn, %{"post" => post_params}) do
-    changeset = Post.changeset(%Post{}, post_params)
-
-    case Repo.insert(changeset) do
+    case CMS.create_post(post_params) do
       {:ok, _post} ->
         conn
         |> put_flash(:info, "Post created successfully.")
@@ -39,8 +37,9 @@ defmodule AhfiWeb.PostController do
   end
 
   def view(conn, %{"slug" => slug}) do
-      post = Repo.get_by!(Post, slug: slug)
-      show(conn, %{ "id" => post.id})
+    post = CMS.get_post_by_slug!(slug)
+
+    show(conn, %{ "id" => post.id})
   end
 
   def show(conn, %{"id" => id}) do
@@ -76,17 +75,16 @@ defmodule AhfiWeb.PostController do
 
 
   def edit(conn, %{"id" => id}) do
-    post = Repo.get!(Post, id)
-    changeset = Post.changeset(post)
+    post = CMS.get_post_by_id!(id)
+    changeset = CMS.change_post(post)
     render(conn, "edit.html", post: post, changeset: changeset)
   end
 
 
   def update(conn, %{"id" => id, "post" => post_params} = params) do
-    post = Repo.get!(Post, id)
-    changeset = Post.changeset(post, post_params)
+    post = CMS.get_post_by_id!(id)
 
-    case Repo.update(changeset) do
+    case CMS.update_post(post, post_params) do
       {:ok, post} ->
         conn
         |> put_flash(:info, "Post updated successfully.")
@@ -99,11 +97,12 @@ defmodule AhfiWeb.PostController do
 
 
   def delete(conn, %{"id" => id}) do
-    post = Repo.get!(Post, id)
+    post = CMS.get_post_by_id!(id)
 
     # Here we use delete! (with a bang) because we expect
     # it to always work (and if it does not, it will raise).
-    Repo.delete!(post)
+
+    CMS.delete_post!(post)
 
     conn
     |> put_flash(:info, "Post deleted successfully.")

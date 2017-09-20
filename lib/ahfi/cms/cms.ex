@@ -113,6 +113,29 @@ defmodule Ahfi.CMS do
   end
 
 
+  def create_post(params \\ %{}) do
+    %Post{}
+    |> Post.changeset(params)
+    |> Repo.insert()
+  end
+
+  def change_post(%Post{} = post) do
+    Post.changeset(post, %{})
+  end
+
+  def update_post(post, post_params) do
+    post
+    |> Post.changeset(post_params)
+    |> Repo.update()
+  end
+
+  def get_post_by_slug!(slug) do
+    Repo.get_by!(Post, slug: slug)
+  end
+
+  def get_post_by_id!(id) do
+    Repo.get!(Post, id)
+  end
 
   def list_posts_for_user(user) do
     query = if user do
@@ -124,5 +147,9 @@ defmodule Ahfi.CMS do
       order_by: [desc: p.date_published]
     end
     Repo.all(query)
+  end
+
+  def delete_post!(%Post{} = post) do
+    Repo.delete!(post)
   end
 end

@@ -1,5 +1,36 @@
 # Ahfi
 
+My personal website (https://anttihalla.fi) on Phoenix Framework / Elixir.
+
+This is in no way complete or ready for general use as-is. I'm slowly working towards
+making this more generic though, and you might find it useful for reference, especially
+if you're trying to get started with Phoenix & Elixir yourself.
+
+## Features
+
+* Static pages in code base
+* Blog posts in database (PostgreSql)
+* Contact form
+  * stores to db
+  * send email
+  * sends Slack notification
+* File upload
+* Single-user password authentication
+* Distillery release
+  * Package standalone release with Erlang Runtime
+  * Command to run db migration tasks on server
+* Phoenix 1.3 project structure
+
+### Roadmap
+
+* Basic admin interface
+* Pages to Db
+* Media library interface
+* Better content creation/editing/publishing interface
+*
+
+## Basics
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
