@@ -52,5 +52,13 @@
   <h2>Blog</h2>
   <p>In the <%= link "blog", to: page_path(@conn, :blog) %>
     I time to time write <em>(only in Finnish for now)</em> about what I've learned on the way.  </p>
+    <ul class="list-unstyled blog-list-simple">
+    <%= for post <- @posts do %>
+        <li><%= link post.title, to: post_path(@conn, :view, post.date_published.year, AhfiWeb.PostView.month(post), post.slug) <> "/" %>
+          <span class="date_published"><%= AhfiWeb.PostView.format_date post.date_published %></span>
+        </li>
+    <% end %>
+    </ul>
+    <em><%= link "More", to: page_path(@conn, :blog)%></em>
   </div>
 </div>

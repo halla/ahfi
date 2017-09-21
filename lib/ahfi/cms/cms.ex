@@ -137,6 +137,15 @@ defmodule Ahfi.CMS do
     Repo.get!(Post, id)
   end
 
+  def get_published_posts(%{limit: limit} = options \\ %{limit: 50}) do
+    query = from p in Post,
+      where: p.is_published == true,
+      order_by: [desc: p.date_published],
+      limit: ^limit
+    Repo.all(query)
+
+  end
+
   def list_posts_for_user(user) do
     query = if user do
       from p in Post,
@@ -152,4 +161,5 @@ defmodule Ahfi.CMS do
   def delete_post!(%Post{} = post) do
     Repo.delete!(post)
   end
+
 end

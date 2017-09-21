@@ -77,18 +77,6 @@ line-height: 1.3; }
 .other-sites li a:hover { opacity: 0.9;   }
 .other-sites h3 { margin: 10px 0 5px 0; }
 
-.blog-list-simple { font-size: 1.1em; line-height: 1.3; font-family: 'Rubik', sans-serif;}
-.blog-list-simple li { margin-bottom:5px; font-size: 0.85em; }
-.blog-list-simple li:nth-child(-n+10) {
-    font-size: 1em;
-    margin: 8px 0;
-}
-.blog-list-simple li:nth-child(-n+3) {
-    margin: 20px 0;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-.blog-list-simple .date_published { margin-left: 5px; padding-bottom: 10px}
 
 /* FRONT PAGE end */
 

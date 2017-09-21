@@ -1,10 +1,22 @@
 <div class="container">
-
+  <h1>Blog</h1>
   <em>(Only in Finnish for now)</em>
   <ul class="list-unstyled blog-list-simple">
 
   <%= for post <- @posts do %>
-      <li><%= link post.title, to: post_path(@conn, :view, post.date_published.year, AhfiWeb.PostView.month(post), post.slug) <> "/" %></li>
+      <li>
+        <div class="featured-image">
+          <%= if post.featured_image do  %>
+          <img src="<%= post.featured_image %>" />
+          <%= end %>
+        </div>
+        <h2><%= link post.title, to: post_path(@conn, :view, post.date_published.year, AhfiWeb.PostView.month(post), post.slug) <> "/" %>
+          <span class="date_published"><%= AhfiWeb.PostView.format_date post.date_published %></span>
+        </h2>
+        <p class="teaser-text">
+          <%= String.slice(post.body, 0, 150) %> &#8230;
+        </p>
+      </li>
   <% end %>
   </ul>
 

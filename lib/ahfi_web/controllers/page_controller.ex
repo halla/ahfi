@@ -5,7 +5,8 @@ defmodule AhfiWeb.PageController do
   alias Ahfi.CMS
 
   def index(conn, _params) do
-    render conn, "index.html"
+    posts = CMS.get_published_posts(%{limit: 3})
+    render conn, "index.html", posts: posts
   end
 
   def projects(conn, _params) do
