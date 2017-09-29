@@ -2,7 +2,9 @@
   <div class="row">
     <div class="col-md-8">
       <h1>Consulting</h1>
-
+      <em>For all inquiries, I'd appreciate a message through the form below.
+        I mostly do remote assignments.
+      </em>
       <h2>Software Crafting</h2>
       <p>The passion of generating new ideas and turning them into working software drives
         me constantly to learn more. The 10+ years of experience in software development has
@@ -13,13 +15,28 @@
           web service from the ground up. I'm happiest when building prototypes, but I also enjoy being part
         of building continuously improving development processes.</p>
 
+  <h2>Technology Bootstrapping</h2>
+  <p>I can help you get started and set up a healthy foundation for you software development project.
+    <p>
+    Before assembling a team I can help you validate your business idea by building a working software <em>prototype</em> and
+    validate its technical feasibility by doing research and doing a <em>proof-of-concept</em>.
 
-  <h2>Generic Coaching</h2>
-  <p>I've used digital <em>mind maps</em> as
-  my personal information tool for 15 years, which has lead me seek better ways to analyze and organize my thoughts.
-  I see computer programming and thinking as similar systemic activities. What you know is your data. What you do is your program.
-  </p>
+    <p>
+    Searching, evaluating, selecting and setting up what your software team needs, including:
+    <ul>
+      <li>Programming languages</li>
+      <li>Development tools and workflows</li>
+      <li>Open-source platforms, frameworks and components</li>
+      <li>Test automation</li>
+      <li>Continuous integration and deployment</li>
+    </ul>
 
+  <h2>Coaching</h2>
+  <p>Besides the software work I've also done quite a bit of personal <em>coaching</em>, mostly related to
+    personal career and skills development.
+<p>
+    As your coach I would help you set up goals and
+    sort out your priorities. I would support and challenge you in reaching your goals, mostly by asking you <em>a lot</em> of questions.
 
 <p>Coaching is about personal development and change. It's about clarifying your thoughts and direction in a methodic way.
 It's about developing the mental skill and flexibility to solve any problem that the life throws at you.
@@ -29,6 +46,7 @@ It's about developing the mental skill and flexibility to solve any problem that
    <em>Mind on maps: Navigate your thoughts methodically with digital mind maps</em> <a href="https://www.amazon.com/dp/B06X9Q3NBB">(Amazon)</a>.
 </blockquote>
 </p>
+<p>I do this on the side, so I usually have just 1-2 clients at a time. The process usually takes 2-5 months.
 
 <h2>Contact</h3>
   <%= render "contact_form.html", changeset: @contact_changeset, action: "contact" %>
