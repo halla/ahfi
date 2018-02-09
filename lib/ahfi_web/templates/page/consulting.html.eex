@@ -3,7 +3,7 @@
     <div class="col-md-8">
       <h1>Consulting</h1>
       <em>For all inquiries, I'd appreciate a message through the form below.
-        I mostly do remote assignments.
+        I've mainly been working in remote assignments and teams since 2013. 
       </em>
       <h2>Software Crafting</h2>
       <p>The passion of generating new ideas and turning them into working software drives
@@ -11,9 +11,12 @@
         taught me about a range of technologies.
       </p>
 
-        <p> I'm a <em>full-stack</em> developer, meaning I can build a
-          web service from the ground up. I'm happiest when building prototypes, but I also enjoy being part
-        of building continuously improving development processes.</p>
+        <p> I'm a <em>full-stack data</em> developer, meaning I can build a
+          data-centric web service from the ground up. I'm at home exploring and analysing data,
+          I know how to build models and deploy them into production &ndash; and how to visualize
+          data for effective communication
+          and business insights. I'm happiest when building prototypes, but I also enjoy being part
+        of building continuously improving development processes. </p>
 
   <h2>Technology Bootstrapping</h2>
   <p>I can help you get started and set up a healthy foundation for you software development project.
@@ -29,6 +32,7 @@
       <li>Open-source platforms, frameworks and components</li>
       <li>Test automation</li>
       <li>Continuous integration and deployment</li>
+      <li>Containerization and cloud environment</li>
     </ul>
 
   <h2>Coaching</h2>
