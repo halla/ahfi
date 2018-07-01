@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#1d8a8a",
+      "text": "#eeeeee"
+    },
+    "button": {
+      "background": "#eeeeee"
+    }
+  },
+  "position": "bottom-right",
+  "content": {
+    "message": "Tämä sivusto käyttää evästeitä toimiakseen, tilastointiin ja mainontaan. Jos et hyväksy evästeitä, muuta selaimesi asetuksia. ",
+    "dismiss": "Hyväksyn evästeet",
+    "link": "Lisätietoa evästeistä",
+    "href": "https://nimilapselle.fi/evasteet"
+  }
+})});
+</script>

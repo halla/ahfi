@@ -13,7 +13,7 @@ defmodule AhfiWeb.Auth do
       user = conn.assigns[:current_user]
         -> conn
       user_id = get_session(conn, :user_id)
-        -> put_current_user(conn, user_id)
+          -> put_current_user(conn, user_id)
       true
         -> put_current_user(conn, nil)
     end
@@ -45,7 +45,7 @@ defmodule AhfiWeb.Auth do
   end
 
   def login_with_password(conn, given_password) do
-    if checkpw(given_password,Application.get_env(:ahfi, :password_hash)) do
+    if checkpw(given_password, Application.get_env(:ahfi, :password_hash)) do
       { :ok, login(conn) }
     else
       { :error, :unauthorized, conn }

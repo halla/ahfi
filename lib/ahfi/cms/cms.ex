@@ -143,7 +143,11 @@ defmodule Ahfi.CMS do
       order_by: [desc: p.date_published],
       limit: ^limit
     Repo.all(query)
+  end
 
+  def with_post_is_published() do
+    from p in Post,
+      where: p.is_published == true
   end
 
   def list_posts_for_user(user) do

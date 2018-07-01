@@ -3,20 +3,25 @@
     <div class="col-md-8">
       <h1>Consulting</h1>
       <em>For all inquiries, I'd appreciate a message through the form below.
-        I've mainly been working in remote assignments and teams since 2013. 
+        I've mainly been working in remote assignments and teams since 2013.
       </em>
-      <h2>Software Crafting</h2>
-      <p>The passion of generating new ideas and turning them into working software drives
-        me constantly to learn more. The 10+ years of experience in software development has
+      <h2>Software Product Development</h2>
+      <p>The passion of generating new ideas and turning them into working software &ndash; that solves actual user problems &ndash;  drives
+        me to constantly learn more. The 10+ years of experience in software development has
         taught me about a range of technologies.
       </p>
 
-        <p> I'm a <em>full-stack data</em> developer, meaning I can build a
-          data-centric web service from the ground up. I'm at home exploring and analysing data,
+        <p> I'm a <em>full-stack data</em> developer, meaning I can design a
+          data-centric web service from the ground up and even build a modest one myself.
+          I'm at home exploring and analysing data,
           I know how to build models and deploy them into production &ndash; and how to visualize
           data for effective communication
-          and business insights. I'm happiest when building prototypes, but I also enjoy being part
-        of building continuously improving development processes. </p>
+          and business insights. </p>
+          <p>I'm happiest when designing and building prototypes, but I also enjoy being part
+        of building continuously improving development processes. Being an entrepreneur myself has taught me plenty
+      about the business side of software as well. </p>
+      <p>I'm a strong communicator &ndash; especially in writing &ndash; which helps me thrive in virtual teams.
+        The ideal role for me is somewhere in the middle of development, design, management and business.
 
   <h2>Technology Bootstrapping</h2>
   <p>I can help you get started and set up a healthy foundation for you software development project.
@@ -50,7 +55,7 @@ It's about developing the mental skill and flexibility to solve any problem that
    <em>Mind on maps: Navigate your thoughts methodically with digital mind maps</em> <a href="https://www.amazon.com/dp/B06X9Q3NBB">(Amazon)</a>.
 </blockquote>
 </p>
-<p>I do this on the side, so I usually have just 1-2 clients at a time. The process usually takes 2-5 months.
+<p>I do this on the side, so I usually only have 1&ndash;2 clients at a time. The process usually takes 2&ndash;5 months, with one (virtual) meeting every week or two.
 
 <h2>Contact</h3>
   <%= render "contact_form.html", changeset: @contact_changeset, action: "contact" %>
