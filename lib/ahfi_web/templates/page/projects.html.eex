@@ -54,20 +54,45 @@
   <em>Tools and prototypes for computer assisted thinking and learning. Computers enable us to think in ways
    that we naturally can't and make many other thought processes much easier. Mind maps are one way to extend our cognitive capabilities but
  they only solve a specific set of problems. These kinds of tools are something I love to work on whenever I have the time. </em>
+ 
 
       <ul class="list-unstyled">
           <li><%= link "Socrateaser", to: static_path(@conn, "/socrateaser/") %>
-              &mdash; Guided thinking using predefined question sets. Avoid context switching and use cognitive off-loading to facilitate repeating thinking tasks.
+              &mdash; <span class="tagline">Guided thinking using predefined question sets</span>
+              <p class="description">Avoid context switching and use cognitive off-loading to facilitate repeating thinking tasks.
+              What an external coach, a facilitator &ndash; or a manager &ndash; effectively does is she makes an otherwise non-linear and multi-faceted 
+              process flat and linear for a person. Without this help, in order to follow each step of a given process, a person needs to 
+              constantly switch the focus between the content and that process. Even the simplest 'chatbot' with predefined questions
+              and zero AI can have a significant impact.
+              </p>
           </li>
           <li>
             <%= link "Valuesorter", to: static_path(@conn, "/apps/valuesorter-lite/") %>
-            &mdash; (Bubble) Sort out a list of thoughts. Simple, guided sorting algorithm to help in prioritizing things, using pairwise comparisons.
+            &mdash; <span class="tagline">(Bubble) Sort out a list of thoughts</span>
+            <p class="description">Simple, guided sorting algorithm to help in prioritizing things, using pairwise comparisons.
+            Sorting a list of items, especially <em>personal preferences</em>, mentally is a surprisingly difficult. It's 
+            even difficult to do with pen and paper (try sorting out your top 10 personal values this way!). With a help of
+            an app it becomes a simple task of comparing two items at a time until the list is sorted.  
+            </p>
+            
           </li>
           <li><%= link "Synapticle", to: static_path(@conn, "/apps/synapticle/") %>
-              &mdash; Tickle your brain with information, reinforce your memory, collide ideas.
+              &mdash; <span class="tagline">Tickle your brain with information, reinforce your memory, collide ideas.</span>
+              <p class="description">
+              There are several ideas here. Learning materal preview and <em>priming</em>, review and reinforcement by repetion, 
+              and methodic ideation by generating combinations. Synapticle also introduces <em>randomness</em> to the thinking
+              process, which is not really possible without an external device. 
+              </p>
           </li>
           <li><%= link "Numbervision", to: "https://play.google.com/store/apps/details?id=com.anywheris.numbervision" %>
-              &mdash; Trainer for visual acuity and working memory. Android app in Play Store.
+              &mdash; <span class="tagline">Trainer for visual acuity and working memory. </span>
+              <p class="description">
+                Numbervision was an experiment to train visual recall of numbers (and text). The observation was
+                difficulty in verifying that two long number strings are the same: the bank account numbers when
+                copying them from paper to an online form. The hypothesis was that the problem was due to trying to verify them 
+                by subvocalizing, by saying them aloud in one's mind, one at a time &ndash; and running out of short-term memory.
+                Coloring the numbers was an attempt to enforce visual matching instead. Android app in Play Store (unmaintained). 
+              <p>              
           </li>
 
       </ul>
