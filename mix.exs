@@ -33,6 +33,7 @@ defmodule Ahfi.Mixfile do
     [{:phoenix, "~> 1.3"},
      {:phoenix_pubsub, "~> 1.0"},
      {:phoenix_ecto, "~> 3.2"},
+     {:bcrypt_elixir, "~> 1.0"},
      {:plug, "~> 1.3"},
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 2.6"},
@@ -43,7 +44,7 @@ defmodule Ahfi.Mixfile do
      {:timex, "~> 3.1"},
      {:httpoison, "~> 0.13"},
      {:poison, "~> 3.1"},
-     {:comeonin, "~> 2.5"},
+     {:comeonin, "~> 4.0"},
      {:distillery, "~> 1.0"},
      {:swoosh, "~> 0.9.1"},
      {:gen_smtp, "~> 0.12.0"}]

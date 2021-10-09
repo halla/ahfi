@@ -81,9 +81,7 @@ Digestit
 
 
 ## Distillery release and deployment
-
-* ssh ws007.anywheris.com -L 5433:localhost:5432 -N
-* MIX_ENV=prod mix release
+* ./build-prod.sh # build inside a docker container to match production server
 * ./deploy-prod.sh
 
 On server
