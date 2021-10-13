@@ -4,7 +4,7 @@ defmodule Ahfi.Post do
   schema "posts" do
     field :body, :string
     field :slug, :string
-    field :date_published, Ecto.Date
+    field :date_published, :date
     field :title, :string
     field :is_published, :boolean
     field :featured_image, :string
